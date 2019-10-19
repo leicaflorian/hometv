@@ -93,37 +93,15 @@ http://fulltv.biz/script/sportitalia.php
 http://everyrai-lh.akamaihd.net/i/raiscuola_1@177965/index_900_av-p.m3u8
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="R101 TV" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_R101_Wiki.jpg/250px-Logo_R101_Wiki.jpg" group-title="MUSIC TV",R101 TV
 http://hlslive.msf.ticdn.it/hls/CH10/live_Layer2.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="ALICE" tvg-shift="" radio="" tvg-logo="http://i.imgur.com/WuSwc2m.png" group-title="LT MULTIMEDIA",ALICE
-http://ltlive01.cloudapp.net/LT_CH_4plat296w.isml/QualityLevels(1264000)/manifest(format=m3u8-aapl).m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="MARCOPOLO" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/e/e8/Marcopolo_Logo_2015.png/220px-Marcopolo_Logo_2015.png" group-title="LT MULTIMEDIA",MARCOPOLO
-http://ltlive01.cloudapp.net/LT_CH_2mkw471qp.isml/QualityLevels(1264000)/manifest(format=m3u8-aapl).m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="RTL 102.5 TV" tvg-shift="" radio="" tvg-logo="http://img.rtl.it/www.rtl.it/img/header/logo_rtl.gif" group-title="MUSIC TV",RTL 102.5 TV
-http://origin-rtl-radio-stream.4mecloud.it/live-video/radiovisione/ngrp:radiovisione/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="FORMUSIC TV" tvg-shift="" radio="" tvg-logo="http://www.gingerdj.com/events/for-music-tv-torino" group-title="MUSIC TV",FORMUSIC TV
-http://sb.top-ix.org:1935/quartaretetv/formusicweb/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio 105 TV" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/0/01/105.png/180px-105.png" group-title="MUSIC TV",Radio 105 TV
-http://fms.105.net:1935/live/105Test1/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Virgin Tv" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Virginradiotv.png" group-title="MUSIC TV",Virgin Tv
-http://fms.105.net:1935/live/virgin1/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Il Meteo.It Oggi" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Meteo.it.png" group-title="METEO",Il Meteo.It Oggi
-http://media.ilmeteo.it/video/iphone/oggi.m4v
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Il Meteo.It Domani" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Meteo.it.png" group-title="METEO",Il Meteo.It Domani
-http://media.ilmeteo.it/video/iphone/domani.m4v
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Il Meteo.It Dopodomani" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Meteo.it.png" group-title="METEO",Il Meteo.It Dopodomani
-http://media.ilmeteo.it/video/iphone/dopodomani.m4v
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio capital Tivù" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/2/27/Monoscopio_Radio_Capital_TV.png/260px-Monoscopio_Radio_Capital_TV.png" group-title="MUSIC TV",Radio capital Tivù
-http://capital_tv-lh.akamaihd.net/i/CapitalTv_1@183098/master.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio Italia Tv" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/5/51/Radio_Italia_TV_Logo.png" group-title="MUSIC TV",Radio Italia Tv
-http://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/index_720x480_av-p.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="KissKiss Italia TV" tvg-shift="" radio="" tvg-logo="https://tunein.com/radio/Radio-Kiss-Kiss-Italia-946-s87514/" group-title="MUSIC TV",KissKiss Italia TV
-http://wma05.fluidstream.net/KKTV01/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio Montecarlo TV" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:RMC1_Logo.png" group-title="MUSIC TV",Radio Montecarlo TV
-http://fms.105.net:1935/live/rmc1/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Ibiza TV" tvg-shift="" radio="" tvg-logo="" group-title="MUSIC TV",Ibiza TV
-http://wma10.fluidstream.net/RadioIbizaTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="KIssKiss TV" tvg-shift="" radio="" tvg-logo="http://www.marchedinotte.com/web/2014-04-29-22-03-08/recensioni-photo-gallery-mobile/420-notre-dame-de-paris-adriatic-arena-pesaro-dal-26-al-29-maggio" group-title="MUSIC TV",KIssKiss TV
-http://wma05.fluidstream.net/KKMulti/livestream_600p/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="M2o Tv" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/2/2d/Logo_m2o_%282012%29.png/200px-Logo_m2o_%282012%29.png" group-title="MUSIC TV",M2o Tv
-http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/master.m3u8
+
+
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro TV
-https://185-133-64-43-rewriter.protv-vidnt.com/protv_ProTVPublish/_definst_/smil:ProTV.smil/playlist.m3u8?playbackUrlPrefix=https%3A%2F%2F%24%7BplaybackHost%7D&tt=fa1be259ee141caced0ad9e16a9f16d7&chunkHttps=true&tmid=ProTV&tpbk=XJ6VVzQBmCgm2Je7&rrt=1543274846&rsid=a685feb1-4f1f-464a-ab74-bf1c8394be53&tuid=florian.leica%40gmail.com&cdn=vimmi&tdid=346386
+https://hometv.herokuapp.com/romania/protv
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV 2" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro TV 2
+https://hometv.herokuapp.com/romania/protv2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro X" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro X
+https://hometv.herokuapp.com/romania/prox
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Gold" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro Gold
+https://hometv.herokuapp.com/romania/progold
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro Cinema
+https://hometv.herokuapp.com/romania/procinema
