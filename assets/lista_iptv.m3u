@@ -1,0 +1,129 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 1" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473429803381logo-rai1-2016.png" group-title="RAI", Rai 1
+http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=2606803
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 2" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473149101555logo-rai2-2016.png" group-title="RAI", Rai 2
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=180116
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 3" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473429907779logo-rai3-2016.png" group-title="RAI", Rai 3
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=180117
+
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rete 4" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/189/logo?width=120&theme=light" group-title="MEDIASET", Rete 4
+https://hometv.herokuapp.com/mediaset/r4
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Canale 5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/187/logo?width=120&theme=light" group-title="MEDIASET", Canale 5
+https://hometv.herokuapp.com/mediaset/c5
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Italia 1" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/188/logo?width=120&theme=light" group-title="MEDIASET", Italia 1
+https://hometv.herokuapp.com/mediaset/i1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="20 Mediaset" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/443/logo?width=120&theme=light" group-title="MEDIASET",20 Mediaset
+https://hometv.herokuapp.com/mediaset/20
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Focus Mediaset" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/249/logo?width=120&theme=light" group-title="MEDIASET",Focus Mediaset
+https://hometv.herokuapp.com/mediaset/focus
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Mediaset Extra" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/194/logo?width=120&theme=light" group-title="MEDIASET",Mediaset Extra
+https://hometv.herokuapp.com/mediaset/extra
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Italia 2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/191/logo?width=120&theme=light" group-title="MEDIASET",Italia 2
+https://hometv.herokuapp.com/mediaset/i2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="La5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/190/logo?width=120&theme=light" group-title="MEDIASET",La5
+https://hometv.herokuapp.com/mediaset/la5
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Iris" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/192/logo?width=120&theme=light" group-title="MEDIASET",Iris
+https://hometv.herokuapp.com/mediaset/iris
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Top Crime" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/193/logo?width=120&theme=light" group-title="MEDIASET",Top Crime
+https://hometv.herokuapp.com/mediaset/topc
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Boing" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/195/logo?width=120&theme=light" group-title="MEDIASET",Boing
+https://hometv.herokuapp.com/mediaset/boing
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cartoonito" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=light" group-title="MEDIASET",Cartoonito
+https://hometv.herokuapp.com/mediaset/cartoon
+
+
+#EXTINF:-1 tvg-id="DMAX" tvg-name="DMax" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/256/logo?width=120&theme=light" group-title="MEDIASET",DMAX
+https://hometv.herokuapp.com/discovery/dmax
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="NOVE" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/238/logo?width=120&theme=light" group-title="VARI",NOVE
+https://hometv.herokuapp.com/discovery/nove
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Real Time" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/255/logo?width=120&theme=light" group-title="VARI",Real Time
+https://hometv.herokuapp.com/discovery/realtime
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Giallo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/244/logo?width=120&theme=light" group-title="MEDIASET",Giallo
+https://hometv.herokuapp.com/discovery/giallo
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="k2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/245/logo?width=120&theme=light" group-title="RAI",K2
+https://hometv.herokuapp.com/discovery/k2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Frisbee" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/246/logo?width=120&theme=light" group-title="RAI",Frisbee
+https://hometv.herokuapp.com/discovery/frisbee
+
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TV 8" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/237/logo?width=120&theme=light" group-title="VARI",TV 8
+https://hometv.herokuapp.com/sky/tv8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cielo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/239/logo?width=120&theme=light" group-title="VARI",Cielo
+https://hometv.herokuapp.com/sky/cielo
+
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Spike" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/441/logo?width=120&theme=light" group-title="VARI",Spike
+https://hometv.herokuapp.com/paramount/spike
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Paramount Channel" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/299/logo?width=120&theme=light" group-title="VARI",Paramount Channel
+https://hometv.herokuapp.com/paramount/paramount
+
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 4" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473430014865logo-rai4-2016.png" group-title="RAI",Rai 4
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 5" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2017/04/04/1491313066406_logo_rai5.png" group-title="RAI",Rai 5
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72382
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Movie" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2017/04/05/1491407722487_logo-raimovie2x.png" group-title="RAI",Rai Movie
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72381
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Premium" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2017/04/05/1491399851219_logo-raipremium2x.png" group-title="RAI",Rai Premium
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72383
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Gulp" tvg-shift="" radio="" tvg-logo="http://www.raigulp.rai.it/dl/RaiGulp/2017/images/raigulp-logo-2017.png" group-title="RAI",Rai Gulp
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4119
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Yoyo" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Yoyo_-_Logo_2017.svg" group-title="RAI",Rai Yoyo
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72384
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai News" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/d/d6/Logo_Rainews_it.svg/200px-Logo_Rainews_it.svg.png" group-title="RAI",Rai News
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Sky Tg24" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/SkyTg24.png/240px-SkyTg24.png" group-title="NEWS",Sky Tg24
+http://skyianywhere2-i.akamaihd.net/hls/live/200275/tg24/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Tgcom24" tvg-shift="" radio="" tvg-logo="http://imgr.video.mediaset.it/bin/834.$plit/C_2_channel_34_upImg.png" group-title="MEDIASET",Tgcom24
+http://live3.msf.ticdn.it/Content/HLS/Live/Channel(CH10HA)/Stream(04)/index.m3u8
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Storia" tvg-shift="" radio="" tvg-logo="http://www.queertv.it/home/raistoria-omosessualita-e-repressione/" group-title="RAI",Rai Storia
+http://everyrai-lh.akamaihd.net/i/raistoria_1@308058/index_900_av-p.m3u8
+#EXTINF:-1 tvg-id="Rai Sport" tvg-name="Rai Sport" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Sport_-_Logo_2017.svg" group-title="RAI",Rai Sport
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=179975
+#EXTINF:-1 tvg-id="Rai Sport+ HD" tvg-name="Rai Sport+ HD" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Sport_%2B_HD_-_Logo_2017.svg" group-title="RAI",Rai Sport+ HD
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Play Sport" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/RaiPlay.svg/1200px-RaiPlay.svg.png" group-title="RAI",Rai Play Sport
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72383
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="SportItalia" tvg-shift="" radio="" tvg-logo="http://fulltv.biz/img/loghi/sportitalia.png" group-title="MEDIASET",SportItalia
+http://fulltv.biz/script/sportitalia.php
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Scuola" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Scuola_-_Logo_2017.svg" group-title="RAI",Rai Scuola
+http://everyrai-lh.akamaihd.net/i/raiscuola_1@177965/index_900_av-p.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="R101 TV" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_R101_Wiki.jpg/250px-Logo_R101_Wiki.jpg" group-title="MUSIC TV",R101 TV
+http://hlslive.msf.ticdn.it/hls/CH10/live_Layer2.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="ALICE" tvg-shift="" radio="" tvg-logo="http://i.imgur.com/WuSwc2m.png" group-title="LT MULTIMEDIA",ALICE
+http://ltlive01.cloudapp.net/LT_CH_4plat296w.isml/QualityLevels(1264000)/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="MARCOPOLO" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/e/e8/Marcopolo_Logo_2015.png/220px-Marcopolo_Logo_2015.png" group-title="LT MULTIMEDIA",MARCOPOLO
+http://ltlive01.cloudapp.net/LT_CH_2mkw471qp.isml/QualityLevels(1264000)/manifest(format=m3u8-aapl).m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="RTL 102.5 TV" tvg-shift="" radio="" tvg-logo="http://img.rtl.it/www.rtl.it/img/header/logo_rtl.gif" group-title="MUSIC TV",RTL 102.5 TV
+http://origin-rtl-radio-stream.4mecloud.it/live-video/radiovisione/ngrp:radiovisione/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="FORMUSIC TV" tvg-shift="" radio="" tvg-logo="http://www.gingerdj.com/events/for-music-tv-torino" group-title="MUSIC TV",FORMUSIC TV
+http://sb.top-ix.org:1935/quartaretetv/formusicweb/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio 105 TV" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/0/01/105.png/180px-105.png" group-title="MUSIC TV",Radio 105 TV
+http://fms.105.net:1935/live/105Test1/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Virgin Tv" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Virginradiotv.png" group-title="MUSIC TV",Virgin Tv
+http://fms.105.net:1935/live/virgin1/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Il Meteo.It Oggi" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Meteo.it.png" group-title="METEO",Il Meteo.It Oggi
+http://media.ilmeteo.it/video/iphone/oggi.m4v
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Il Meteo.It Domani" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Meteo.it.png" group-title="METEO",Il Meteo.It Domani
+http://media.ilmeteo.it/video/iphone/domani.m4v
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Il Meteo.It Dopodomani" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Meteo.it.png" group-title="METEO",Il Meteo.It Dopodomani
+http://media.ilmeteo.it/video/iphone/dopodomani.m4v
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio capital Tivù" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/2/27/Monoscopio_Radio_Capital_TV.png/260px-Monoscopio_Radio_Capital_TV.png" group-title="MUSIC TV",Radio capital Tivù
+http://capital_tv-lh.akamaihd.net/i/CapitalTv_1@183098/master.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio Italia Tv" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/5/51/Radio_Italia_TV_Logo.png" group-title="MUSIC TV",Radio Italia Tv
+http://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/index_720x480_av-p.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="KissKiss Italia TV" tvg-shift="" radio="" tvg-logo="https://tunein.com/radio/Radio-Kiss-Kiss-Italia-946-s87514/" group-title="MUSIC TV",KissKiss Italia TV
+http://wma05.fluidstream.net/KKTV01/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Radio Montecarlo TV" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:RMC1_Logo.png" group-title="MUSIC TV",Radio Montecarlo TV
+http://fms.105.net:1935/live/rmc1/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Ibiza TV" tvg-shift="" radio="" tvg-logo="" group-title="MUSIC TV",Ibiza TV
+http://wma10.fluidstream.net/RadioIbizaTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="KIssKiss TV" tvg-shift="" radio="" tvg-logo="http://www.marchedinotte.com/web/2014-04-29-22-03-08/recensioni-photo-gallery-mobile/420-notre-dame-de-paris-adriatic-arena-pesaro-dal-26-al-29-maggio" group-title="MUSIC TV",KIssKiss TV
+http://wma05.fluidstream.net/KKMulti/livestream_600p/playlist.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="M2o Tv" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/2/2d/Logo_m2o_%282012%29.png/200px-Logo_m2o_%282012%29.png" group-title="MUSIC TV",M2o Tv
+http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/master.m3u8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro TV
+https://185-133-64-43-rewriter.protv-vidnt.com/protv_ProTVPublish/_definst_/smil:ProTV.smil/playlist.m3u8?playbackUrlPrefix=https%3A%2F%2F%24%7BplaybackHost%7D&tt=fa1be259ee141caced0ad9e16a9f16d7&chunkHttps=true&tmid=ProTV&tpbk=XJ6VVzQBmCgm2Je7&rrt=1543274846&rsid=a685feb1-4f1f-464a-ab74-bf1c8394be53&tuid=florian.leica%40gmail.com&cdn=vimmi&tdid=346386

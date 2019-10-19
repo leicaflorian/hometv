@@ -7,10 +7,6 @@ const AutoLoad = require('fastify-autoload')
 const port = process.env.PORT || '4000';
 const env = process.env.NODE_ENV || 'development';
 
-console.log("port", port);
-console.log("env", env);
-
-
 const opts = {
   logger: true
 }
@@ -37,10 +33,5 @@ fastify.register(AutoLoad, {
   dir: path.join(__dirname, 'services'),
   options: Object.assign({}, opts)
 })
-
-// Make sure to call next when done
-//  next()
-
-//}
 
 fastify.listen(port, "0.0.0.0")
