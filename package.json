@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "tap test/**/*.test.js",
-    "start": "fastify start -l info app.js",
+    "start": "node app.js",
     "dev": "fastify start -l info -P app.js"
   },
   "keywords": [],
