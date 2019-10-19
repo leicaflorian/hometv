@@ -4,7 +4,7 @@ const path = require('path')
 const Fastify = require('fastify')
 const AutoLoad = require('fastify-autoload')
 
-const port = process.env.PORT || '3000';
+const port = process.env.PORT || '4000';
 const env = process.env.NODE_ENV || 'development';
 
 console.log("port", port);
@@ -43,4 +43,4 @@ fastify.register(AutoLoad, {
 
 //}
 
-fastify.listen(port)
+fastify.listen(port, "0.0.0.0")
