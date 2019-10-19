@@ -2,6 +2,10 @@
 const axios = require('axios');
 
 module.exports = function(fastify, opts, next) {
+  fastify.get("/", function(request, reply) {
+    reply.send("Benvenuto!")
+  })
+
 
   fastify.get('/tv8', function(request, reply) {
     axios.get("https://video.sky.it/be/getLivestream?id=7")
@@ -32,11 +36,3 @@ module.exports = function(fastify, opts, next) {
 
   next()
 }
-
-// If you prefer async/await, use the following
-//
-// module.exports = async function (fastify, opts) {
-//   fastify.get('/', async function (request, reply) {
-//     return { root: true }
-//   })
-// }
