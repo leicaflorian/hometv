@@ -3,6 +3,9 @@
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
 
+const port     = process.env.PORT || '3000';
+const env      = process.env.NODE_ENV || 'development';
+
 module.exports = function (fastify, opts, next) {
   // Place here your custom code!
 
