@@ -7,6 +7,10 @@ const AutoLoad = require('fastify-autoload')
 const port = process.env.PORT || '3000';
 const env = process.env.NODE_ENV || 'development';
 
+console.log("port", port);
+console.log("env", env);
+
+
 const opts = {
   logger: true
 }
