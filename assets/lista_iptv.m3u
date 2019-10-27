@@ -105,3 +105,6 @@ https://hometv.herokuapp.com/romania/prox
 https://hometv.herokuapp.com/romania/progold
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro Cinema
 https://hometv.herokuapp.com/romania/procinema
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Isola di pietro" tvg-shift="" radio="" tvg-logo="" group-title="serie tv", Isola di pietro
+https://vod05.msf.cdn.mediaset.net/farmunica/2019/10/478843_16dfe6cdae5965/dashrcclean/hd_no_mpl.mpd
