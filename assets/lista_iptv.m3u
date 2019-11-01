@@ -95,16 +95,36 @@ http://everyrai-lh.akamaihd.net/i/raiscuola_1@177965/index_900_av-p.m3u8
 http://hlslive.msf.ticdn.it/hls/CH10/live_Layer2.m3u8
 
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro TV
-https://hometv.herokuapp.com/romania/protv
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV 2" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro TV 2
-https://hometv.herokuapp.com/romania/protv2
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro X" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro X
-https://hometv.herokuapp.com/romania/prox
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Gold" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro Gold
-https://hometv.herokuapp.com/romania/progold
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rocktv.png" group-title="ROMANIA", Pro Cinema
-https://hometv.herokuapp.com/romania/procinema
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro TV
+https://hometv.herokuapp.com/protv/protv
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV 2" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/48ba5c50-b67d-4201-8a0a-4978903011fd.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro TV 2
+https://hometv.herokuapp.com/protv/protv2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro X" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ee5ceedd-0454-4ea0-a280-2234a91bca61.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro X
+https://hometv.herokuapp.com/protv/prox
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Gold" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/86dc5207-07bc-4ea7-84e3-0d170523a5ea.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro Gold
+https://hometv.herokuapp.com/protv/progold
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ba81cb4c-64dc-4f0f-ad35-43406f1580b0.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro Cinema
+https://hometv.herokuapp.com/protv/procinema
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Isola di pietro" tvg-shift="" radio="" tvg-logo="" group-title="serie tv", Isola di pietro
-https://vod05.msf.cdn.mediaset.net/farmunica/2019/10/478843_16dfe6cdae5965/dashrcclean/hd_no_mpl.mpd
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR 1" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-1.jpg" group-title="TVR", TVR 1
+https://hometv.herokuapp.com/tvr/tvr1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR 2" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-2.jpg" group-title="TVR", TVR 2
+https://hometv.herokuapp.com/tvr/tvr2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR 3" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-3.jpg" group-title="TVR", TVR 3
+https://hometv.herokuapp.com/tvr/tvr3
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR International" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-international.jpg" group-title="TVR", TVR International
+https://hometv.herokuapp.com/tvr/tvri
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR HD" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-hd.jpg" group-title="TVR", TVR HD
+https://hometv.herokuapp.com/tvr/tvrhd
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Moldova" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-moldova.jpg" group-title="TVR", TVR Moldova
+https://hometv.herokuapp.com/tvr/tvrmodlova
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Craiova" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-craiova.jpg" group-title="TVR", TVR Craiova
+https://hometv.herokuapp.com/tvr/tvrcraiova
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Cluj" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-cluj.jpg" group-title="TVR", TVR Cluj
+https://hometv.herokuapp.com/tvr/tvrcluj
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Iasi" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-iasi.jpg" group-title="TVR", TVR Iasi
+https://hometv.herokuapp.com/tvr/tvriasi
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Timisoara" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-timisioara.jpg" group-title="TVR", TVR Timisoara
+https://hometv.herokuapp.com/tvr/tvrtimisoara
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Targu Mures" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-tirmures.jpg" group-title="TVR", TVR Targu Mures
+https://hometv.herokuapp.com/tvr/tvrtirgumures
