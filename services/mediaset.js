@@ -14,6 +14,7 @@ const channelsMap = {
   topc: "LT",
   boing: "KB",
   cartoon: "LA",
+  tg24: "KF",
   r101: "ER",
   virgin: "EW",
   m4c: "W1",

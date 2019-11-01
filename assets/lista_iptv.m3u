@@ -32,6 +32,7 @@ https://hometv.herokuapp.com/mediaset/boing
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cartoonito" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=dark" group-title="MEDIASET",Cartoonito
 https://hometv.herokuapp.com/mediaset/cartoon
 
+
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="La 7" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/253/logo?width=120&theme=dark" group-title="MEDIASET",La 7
 https://d15umi5iaezxgx.cloudfront.net/OUT/DASH/Live.mpd
 
@@ -87,9 +88,9 @@ http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990
 
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Sky Tg24" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/240/logo?width=120&theme=dark" group-title="SKY",Sky Tg24
-http://skyianywhere2-i.akamaihd.net/hls/live/200275/tg24/playlist.m3u8
+https://hometv.herokuapp.com/sky/tg24
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Tgcom24" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/197/logo?width=120&theme=dark" group-title="MEDIASET",Tgcom24
-http://live3.msf.ticdn.it/Content/HLS/Live/Channel(CH10HA)/Stream(04)/index.m3u8
+https://hometv.herokuapp.com/mediaset/tg24
 
 
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="SportItalia" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/54/logo?width=120&theme=dark" group-title="SPORT",SportItalia

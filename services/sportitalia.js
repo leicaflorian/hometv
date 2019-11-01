@@ -2,12 +2,11 @@ const axios = require('axios').default;
 
 module.exports = function(fastify, opts, next) {
 
-  fastify.get('/sportitalia', function(request, reply) {
+  fastify.get('/sportitalia', async function(request, reply) {
+    const resp = await axios.post("https://www.sportitalia.com/api/v2/content/57561/access")
+    const streamUrl = resp.data.data.stream
 
-    axios.get("https://www.sportitalia.com/api/v2/content/57561/access")
-      .then(resp => {
-        reply.redirect(resp.data.stream)
-      })
+    reply.redirect(streamUrl)
   })
 
   next();
