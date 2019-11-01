@@ -32,6 +32,9 @@ https://hometv.herokuapp.com/mediaset/boing
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cartoonito" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=dark" group-title="MEDIASET",Cartoonito
 https://hometv.herokuapp.com/mediaset/cartoon
 
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="La 7" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/253/logo?width=120&theme=dark" group-title="MEDIASET",La 7
+https://d15umi5iaezxgx.cloudfront.net/OUT/DASH/Live.mpd
+
 
 #EXTINF:-1 tvg-id="DMAX" tvg-name="DMax" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/256/logo?width=120&theme=dark" group-title="DISCOVERY",DMAX
 https://hometv.herokuapp.com/discovery/dmax
@@ -39,6 +42,8 @@ https://hometv.herokuapp.com/discovery/dmax
 https://hometv.herokuapp.com/discovery/nove
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Real Time" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/255/logo?width=120&theme=dark" group-title="DISCOVERY",Real Time
 https://hometv.herokuapp.com/discovery/realtime
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Food Network" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/431/logo?width=120&theme=dark" group-title="DISCOVERY",Food Network
+https://hometv.herokuapp.com/discovery/food
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Giallo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/244/logo?width=120&theme=dark" group-title="DISCOVERY",Giallo
 https://hometv.herokuapp.com/discovery/giallo
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="k2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/245/logo?width=120&theme=dark" group-title="DISCOVERY",K2

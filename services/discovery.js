@@ -7,6 +7,7 @@ const channelsMap = {
   giallo: "6",
   k2: "7",
   frisbee: "8",
+  food: "21"
 }
 
 module.exports = function(fastify, opts, next) {
