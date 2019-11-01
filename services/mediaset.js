@@ -14,6 +14,9 @@ const channelsMap = {
   topc: "LT",
   boing: "KB",
   cartoon: "LA",
+  r101: "ER",
+  virgin: "EW",
+  m4c: "W1",
 }
 
 function getHLSUrl(resp) {

@@ -1,109 +1,111 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 1" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473429803381logo-rai1-2016.png" group-title="RAI", Rai 1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 1" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/217/logo?width=120&theme=dark" group-title="RAI", Rai 1
 http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=2606803
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 2" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473149101555logo-rai2-2016.png" group-title="RAI", Rai 2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/218/logo?width=120&theme=dark" group-title="RAI", Rai 2
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=180116
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 3" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473429907779logo-rai3-2016.png" group-title="RAI", Rai 3
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 3" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/219/logo?width=120&theme=dark" group-title="RAI", Rai 3
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=180117
 
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rete 4" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/189/logo?width=120&theme=light" group-title="MEDIASET", Rete 4
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rete 4" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/189/logo?width=120&theme=dark" group-title="MEDIASET", Rete 4
 https://hometv.herokuapp.com/mediaset/r4
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Canale 5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/187/logo?width=120&theme=light" group-title="MEDIASET", Canale 5
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Canale 5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/187/logo?width=120&theme=dark" group-title="MEDIASET", Canale 5
 https://hometv.herokuapp.com/mediaset/c5
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Italia 1" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/188/logo?width=120&theme=light" group-title="MEDIASET", Italia 1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Italia 1" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/188/logo?width=120&theme=dark" group-title="MEDIASET", Italia 1
 https://hometv.herokuapp.com/mediaset/i1
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="20 Mediaset" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/443/logo?width=120&theme=light" group-title="MEDIASET",20 Mediaset
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="20 Mediaset" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/443/logo?width=120&theme=dark" group-title="MEDIASET",20 Mediaset
 https://hometv.herokuapp.com/mediaset/20
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Focus Mediaset" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/249/logo?width=120&theme=light" group-title="MEDIASET",Focus Mediaset
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Focus Mediaset" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/249/logo?width=120&theme=dark" group-title="MEDIASET",Focus Mediaset
 https://hometv.herokuapp.com/mediaset/focus
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Mediaset Extra" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/194/logo?width=120&theme=light" group-title="MEDIASET",Mediaset Extra
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Mediaset Extra" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/194/logo?width=120&theme=dark" group-title="MEDIASET",Mediaset Extra
 https://hometv.herokuapp.com/mediaset/extra
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Italia 2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/191/logo?width=120&theme=light" group-title="MEDIASET",Italia 2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Italia 2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/191/logo?width=120&theme=dark" group-title="MEDIASET",Italia 2
 https://hometv.herokuapp.com/mediaset/i2
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="La5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/190/logo?width=120&theme=light" group-title="MEDIASET",La5
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="La5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/190/logo?width=120&theme=dark" group-title="MEDIASET",La5
 https://hometv.herokuapp.com/mediaset/la5
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Iris" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/192/logo?width=120&theme=light" group-title="MEDIASET",Iris
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Iris" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/192/logo?width=120&theme=dark" group-title="MEDIASET",Iris
 https://hometv.herokuapp.com/mediaset/iris
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Top Crime" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/193/logo?width=120&theme=light" group-title="MEDIASET",Top Crime
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Top Crime" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/193/logo?width=120&theme=dark" group-title="MEDIASET",Top Crime
 https://hometv.herokuapp.com/mediaset/topc
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Boing" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/195/logo?width=120&theme=light" group-title="MEDIASET",Boing
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Boing" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/195/logo?width=120&theme=lidarkght" group-title="MEDIASET",Boing
 https://hometv.herokuapp.com/mediaset/boing
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cartoonito" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=light" group-title="MEDIASET",Cartoonito
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cartoonito" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=dark" group-title="MEDIASET",Cartoonito
 https://hometv.herokuapp.com/mediaset/cartoon
 
 
-#EXTINF:-1 tvg-id="DMAX" tvg-name="DMax" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/256/logo?width=120&theme=light" group-title="MEDIASET",DMAX
+#EXTINF:-1 tvg-id="DMAX" tvg-name="DMax" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/256/logo?width=120&theme=dark" group-title="DISCOVERY",DMAX
 https://hometv.herokuapp.com/discovery/dmax
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="NOVE" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/238/logo?width=120&theme=light" group-title="VARI",NOVE
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="NOVE" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/238/logo?width=120&theme=dark" group-title="DISCOVERY",NOVE
 https://hometv.herokuapp.com/discovery/nove
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Real Time" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/255/logo?width=120&theme=light" group-title="VARI",Real Time
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Real Time" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/255/logo?width=120&theme=dark" group-title="DISCOVERY",Real Time
 https://hometv.herokuapp.com/discovery/realtime
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Giallo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/244/logo?width=120&theme=light" group-title="MEDIASET",Giallo
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Giallo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/244/logo?width=120&theme=dark" group-title="DISCOVERY",Giallo
 https://hometv.herokuapp.com/discovery/giallo
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="k2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/245/logo?width=120&theme=light" group-title="RAI",K2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="k2" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/245/logo?width=120&theme=dark" group-title="DISCOVERY",K2
 https://hometv.herokuapp.com/discovery/k2
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Frisbee" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/246/logo?width=120&theme=light" group-title="RAI",Frisbee
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Frisbee" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/246/logo?width=120&theme=dark" group-title="DISCOVERY",Frisbee
 https://hometv.herokuapp.com/discovery/frisbee
 
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TV 8" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/237/logo?width=120&theme=light" group-title="VARI",TV 8
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TV 8" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/237/logo?width=120&theme=dark" group-title="SKY",TV 8
 https://hometv.herokuapp.com/sky/tv8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cielo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/239/logo?width=120&theme=light" group-title="VARI",Cielo
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cielo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/239/logo?width=120&theme=dark" group-title="SKY",Cielo
 https://hometv.herokuapp.com/sky/cielo
 
-
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Spike" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/441/logo?width=120&theme=light" group-title="VARI",Spike
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Spike" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/441/logo?width=120&theme=dark" group-title="PARAMOUNT",Spike
 https://hometv.herokuapp.com/paramount/spike
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Paramount Channel" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/299/logo?width=120&theme=light" group-title="VARI",Paramount Channel
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Paramount Channel" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/299/logo?width=120&theme=dark" group-title="PARAMOUNT",Paramount Channel
 https://hometv.herokuapp.com/paramount/paramount
 
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 4" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2016/09/1473430014865logo-rai4-2016.png" group-title="RAI",Rai 4
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 4" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/220/logo?width=120&theme=dark" group-title="RAI",Rai 4
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 5" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2017/04/04/1491313066406_logo_rai5.png" group-title="RAI",Rai 5
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai 5" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/221/logo?width=120&theme=dark" group-title="RAI",Rai 5
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72382
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Movie" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2017/04/05/1491407722487_logo-raimovie2x.png" group-title="RAI",Rai Movie
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Movie" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/229/logo?width=120&theme=dark" group-title="RAI",Rai Movie
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72381
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Premium" tvg-shift="" radio="" tvg-logo="http://www.rai.it/dl/img/2017/04/05/1491399851219_logo-raipremium2x.png" group-title="RAI",Rai Premium
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Premium" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/225/logo?width=120&theme=dark" group-title="RAI",Rai Premium
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72383
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Gulp" tvg-shift="" radio="" tvg-logo="http://www.raigulp.rai.it/dl/RaiGulp/2017/images/raigulp-logo-2017.png" group-title="RAI",Rai Gulp
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Gulp" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/228/logo?width=120&theme=dark" group-title="RAI",Rai Gulp
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4119
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Yoyo" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Yoyo_-_Logo_2017.svg" group-title="RAI",Rai Yoyo
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Yoyo" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/227/logo?width=120&theme=dark" group-title="RAI",Rai Yoyo
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72384
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai News" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/d/d6/Logo_Rainews_it.svg/200px-Logo_Rainews_it.svg.png" group-title="RAI",Rai News
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai News" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/222/logo?width=120&theme=dark" group-title="RAI",Rai News
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Storia" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/226/logo?width=120&theme=dark" group-title="RAI",Rai Storia
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990
+#EXTINF:-1 tvg-id="Rai Sport" tvg-name="Rai Sport" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/224/logo?width=120&theme=dark" group-title="RAI",Rai Sport
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=179975
+#EXTINF:-1 tvg-id="Rai Sport+ HD" tvg-name="Rai Sport+ HD" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/223/logo?width=120&theme=dark" group-title="RAI",Rai Sport+ HD
+http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Scuola" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/230/logo?width=120&theme=dark" group-title="RAI",Rai Scuola
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Sky Tg24" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/SkyTg24.png/240px-SkyTg24.png" group-title="NEWS",Sky Tg24
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Sky Tg24" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/240/logo?width=120&theme=dark" group-title="SKY",Sky Tg24
 http://skyianywhere2-i.akamaihd.net/hls/live/200275/tg24/playlist.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Tgcom24" tvg-shift="" radio="" tvg-logo="http://imgr.video.mediaset.it/bin/834.$plit/C_2_channel_34_upImg.png" group-title="MEDIASET",Tgcom24
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Tgcom24" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/197/logo?width=120&theme=dark" group-title="MEDIASET",Tgcom24
 http://live3.msf.ticdn.it/Content/HLS/Live/Channel(CH10HA)/Stream(04)/index.m3u8
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Storia" tvg-shift="" radio="" tvg-logo="http://www.queertv.it/home/raistoria-omosessualita-e-repressione/" group-title="RAI",Rai Storia
-http://everyrai-lh.akamaihd.net/i/raistoria_1@308058/index_900_av-p.m3u8
-#EXTINF:-1 tvg-id="Rai Sport" tvg-name="Rai Sport" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Sport_-_Logo_2017.svg" group-title="RAI",Rai Sport
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=179975
-#EXTINF:-1 tvg-id="Rai Sport+ HD" tvg-name="Rai Sport+ HD" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Sport_%2B_HD_-_Logo_2017.svg" group-title="RAI",Rai Sport+ HD
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Play Sport" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/RaiPlay.svg/1200px-RaiPlay.svg.png" group-title="RAI",Rai Play Sport
-http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72383
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="SportItalia" tvg-shift="" radio="" tvg-logo="http://fulltv.biz/img/loghi/sportitalia.png" group-title="MEDIASET",SportItalia
-http://fulltv.biz/script/sportitalia.php
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Scuola" tvg-shift="" radio="" tvg-logo="https://it.wikipedia.org/wiki/File:Rai_Scuola_-_Logo_2017.svg" group-title="RAI",Rai Scuola
-http://everyrai-lh.akamaihd.net/i/raiscuola_1@177965/index_900_av-p.m3u8
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="R101 TV" tvg-shift="" radio="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_R101_Wiki.jpg/250px-Logo_R101_Wiki.jpg" group-title="MUSIC TV",R101 TV
-http://hlslive.msf.ticdn.it/hls/CH10/live_Layer2.m3u8
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="SportItalia" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/54/logo?width=120&theme=dark" group-title="SPORT",SportItalia
+https://hometv.herokuapp.com/sportitalia
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="R101 TV" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/463/logo?width=120&theme=dark" group-title="MUSIC TV",R101 TV
+https://hometv.herokuapp.com/mediaset/r101
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Virgin Radio" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/461/logo?width=120&theme=dark" group-title="MUSIC TV",Virgin Radio
+https://hometv.herokuapp.com/mediaset/virgin
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Deejay Tv" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/162/logo?width=120&theme=dark" group-title="MUSIC TV",Virgin Radio
+https://deejay-tv-lh.akamaized.net/i/DeejayTv_1@129866/master.m3u8
 
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro TV
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="PROTV", Pro TV
 https://hometv.herokuapp.com/protv/protv
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV 2" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/48ba5c50-b67d-4201-8a0a-4978903011fd.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro TV 2
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro TV 2" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/48ba5c50-b67d-4201-8a0a-4978903011fd.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="PROTV", Pro TV 2
 https://hometv.herokuapp.com/protv/protv2
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro X" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ee5ceedd-0454-4ea0-a280-2234a91bca61.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro X
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro X" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ee5ceedd-0454-4ea0-a280-2234a91bca61.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="PROTV", Pro X
 https://hometv.herokuapp.com/protv/prox
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Gold" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/86dc5207-07bc-4ea7-84e3-0d170523a5ea.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro Gold
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Gold" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/86dc5207-07bc-4ea7-84e3-0d170523a5ea.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="PROTV", Pro Gold
 https://hometv.herokuapp.com/protv/progold
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ba81cb4c-64dc-4f0f-ad35-43406f1580b0.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ProTv", Pro Cinema
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ba81cb4c-64dc-4f0f-ad35-43406f1580b0.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="PROTV", Pro Cinema
 https://hometv.herokuapp.com/protv/procinema
 
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR 1" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-1.jpg" group-title="TVR", TVR 1

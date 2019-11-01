@@ -9,5 +9,11 @@ module.exports = function(fastify, opts, next) {
     reply.send(stream)
   })
 
+  fastify.get('/iptest', function(request, reply) {
+    var ip = require("ip");
+
+    reply.send(ip.address())
+  })
+
   next()
 }
