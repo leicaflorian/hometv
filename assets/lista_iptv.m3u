@@ -114,6 +114,27 @@ https://hometv.herokuapp.com/protv/progold
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Pro Cinema" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/ba81cb4c-64dc-4f0f-ad35-43406f1580b0.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="PROTV", Pro Cinema
 https://hometv.herokuapp.com/protv/procinema
 
+
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena 1" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Antena 1
+https://hometv.herokuapp.com/antena/1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena Stars" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Antena Stars
+https://hometv.herokuapp.com/antena/stars
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena 3" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Antena 3
+https://hometv.herokuapp.com/antena/3
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Happy Channel" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Happy Channel
+https://hometv.herokuapp.com/antena/happy
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Zu TV" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Zu TV
+https://hometv.herokuapp.com/antena/zu
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena Monden" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Antena Monden
+https://hometv.herokuapp.com/antena/monden
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Comedy Play" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Comedy Play
+https://hometv.herokuapp.com/antena/comedy
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cook & Play" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Cook & Play
+https://hometv.herokuapp.com/antena/cook
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena International" tvg-shift="" radio="" tvg-logo="https://cloudia.cms.protvplus.ro/rx/b9e55242-3105-4765-acbe-51ed8563e341.png?default=b507a3ad-e712-494d-9667-5274d0c05bca" group-title="ANTENA", Antena International
+https://hometv.herokuapp.com/antena/international
+
+
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR 1" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-1.jpg" group-title="TVR", TVR 1
 https://hometv.herokuapp.com/tvr/tvr1
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR 2" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-2.jpg" group-title="TVR", TVR 2
