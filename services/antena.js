@@ -15,27 +15,11 @@ const channelsMap = {
 
 module.exports = function(fastify, opts, next) {
 
-fastify.get('/antena/:channel', function(request, reply) {
+  fastify.get('/antena/:channel', function(request, reply) {
 
-  reply.redirect(channelsMap[request.params.channel])
-
-  /*  axios.get(mainURL + channelsMap[request.params.channel])
-     .then(resp => {
-       const dom = parse(resp.data, { script: true });
-       const script = dom.querySelector(".video-container script");
-       const liveEmbedHTML5 = function(data) {
-         console.log(data)
-       };
-
-       console.log(dom.querySelector(".video-container").querySelector("script"));
-
-       //eval(script.textContent)
-
-       reply.send(dom.toString())
-       /* reply.redirect(resp.data.streaming_url) */
-}) * /
-})
+    reply.redirect(channelsMap[request.params.channel])
+  })
 
 
-next()
+  next()
 }
