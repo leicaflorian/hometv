@@ -11,10 +11,7 @@ async function getListaIptv() {
 
 module.exports = function(fastify, opts, next) {
   fastify.get("/", async function(request, reply) {
-    const parsedManifest = m3u8Parser.parse(await getListaIptv());
-
-    console.log(parsedManifest);
-    
+    const parsedManifest = m3u8Parser.parse(await getListaIptv());    
 
     reply.view("index", { data: parsedManifest });
   })
