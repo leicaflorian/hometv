@@ -16,9 +16,7 @@
     "fastify-plugin": "^1.5.0",
     "ip": "^1.1.5",
     "iptv-playlist-parser": "^0.3.0",
-    "node-html-parser": "^1.1.16"
-  },
-  "devDependencies": {
+    "node-html-parser": "^1.1.16",
     "point-of-view": "^3.7.0",
     "pug": "^2.0.4",
     "tap": "^12.5.3"
