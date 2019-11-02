@@ -115,7 +115,7 @@ https://hometv.herokuapp.com/protv/progold
 https://hometv.herokuapp.com/protv/procinema
 
 
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena 1" tvg-shift="" radio="" tvg-logo="https://assets.antenaplay.ro/2019/02/08/PjLp0Sra3fXkll2DZ6mu.png" group-title="ANTENA", Antena 1
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena 1" tvg-shift="" radio="" tvg-logo="https://a1.ro/templates/default/images/a1-logo.png" group-title="ANTENA", Antena 1
 https://hometv.herokuapp.com/antena/1
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Antena Stars" tvg-shift="" radio="" tvg-logo="https://assets.antenaplay.ro/2019/02/08/F0FMkw51SP3drLck8hiU.png" group-title="ANTENA", Antena Stars
 https://hometv.herokuapp.com/antena/stars
@@ -145,15 +145,15 @@ https://hometv.herokuapp.com/tvr/tvr3
 https://hometv.herokuapp.com/tvr/tvri
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR HD" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvrhd.png" group-title="TVR", TVR HD
 https://hometv.herokuapp.com/tvr/tvrhd
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Moldova" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-moldova.jpg" group-title="TVR", TVR Moldova
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Moldova" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvrmd.png" group-title="TVR", TVR Moldova
 https://hometv.herokuapp.com/tvr/tvrmodlova
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Craiova" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-craiova.jpg" group-title="TVR", TVR Craiova
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Craiova" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvrcraiova.png" group-title="TVR", TVR Craiova
 https://hometv.herokuapp.com/tvr/tvrcraiova
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Cluj" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-cluj.jpg" group-title="TVR", TVR Cluj
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Cluj" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvrcluj.png" group-title="TVR", TVR Cluj
 https://hometv.herokuapp.com/tvr/tvrcluj
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Iasi" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-iasi.jpg" group-title="TVR", TVR Iasi
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Iasi" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvriasi.png" group-title="TVR", TVR Iasi
 https://hometv.herokuapp.com/tvr/tvriasi
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Timisoara" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-timisioara.jpg" group-title="TVR", TVR Timisoara
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Timisoara" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvrtimisoara.png" group-title="TVR", TVR Timisoara
 https://hometv.herokuapp.com/tvr/tvrtimisoara
-#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Targu Mures" tvg-shift="" radio="" tvg-logo="https://www.tvrplus.ro/logos/tvr-tirmures.jpg" group-title="TVR", TVR Targu Mures
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="TVR Targu Mures" tvg-shift="" radio="" tvg-logo="http://www.tvr.ro/images/logo_stations_tvrmures.png" group-title="TVR", TVR Targu Mures
 https://hometv.herokuapp.com/tvr/tvrtirgumures
