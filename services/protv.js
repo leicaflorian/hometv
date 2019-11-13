@@ -1,6 +1,6 @@
 const mainURL = `https://vid.hls.protv.ro/`;
 const channelsMap = {
-  protv: "protvhd.m3u8?1",
+  protv: "protvhdn/protvhd.m3u8?1",
   protv2: "pro2n/pro2.m3u8?1",
   prox: "proxhdn/proxhd.m3u8?1",
   progold: "progoldn/progold.m3u8?1",
