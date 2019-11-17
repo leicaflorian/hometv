@@ -21,6 +21,8 @@ module.exports = function(fastify, opts, next) {
     try {
       const streamLink = await getChannel(request.params.channel);
 
+      console.log("Returning URL", streamLink);
+      
       //reply.send("New Page URL\n" + page.url() + "\n" + streamLink);
 
       reply.redirect(streamLink)
