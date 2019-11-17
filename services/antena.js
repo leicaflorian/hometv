@@ -1,25 +1,82 @@
 const axios = require('axios').default;
-//const { parse } = require("node-html-parser");
-//const mainURL = `https://antenaplay.ro/live/`;
+const puppeteer = require('puppeteer');
+const mainURL = `https://antenaplay.ro/`;
 const channelsMap = {
-  1: "https://ivm.antenaplay.ro/live/a1/playlist.m3u8?starttime=1572634362&endtime=1572641592&source=web&token=19Gjo_649kjwAQpbPNdvIFTiksQ=",
-  stars: "https://ivm.antenaplay.ro/live/astars/playlist.m3u8?starttime=1572644226&endtime=1572651456&source=web&token=N4HEQd2CDyllH2Pz-A2JMGImUVs=",
-  3: "https://ivm.antenaplay.ro/live/a3/playlist.m3u8?starttime=1572644404&endtime=1572651634&source=web&token=9gZLgGsKo2tD9ZfcFXYTP0SzPWw=",
-  happy: "https://ivm.antenaplay.ro/live/happy/playlist.m3u8?starttime=1572644438&endtime=1572651668&source=web&token=D7IOda6ASbslf3KyrCXU8oyS3YE=",
-  zu: "https://ivm.antenaplay.ro/live/zu/playlist.m3u8?starttime=1572644458&endtime=1572651688&source=web&token=uBAXmDWpNTWR3xaT6A0b2T3MLjo=",
-  monden: "https://stream1.antenaplay.ro/live/smil:AntenaMonden.smil/playlist.m3u8?starttime=1572644484&endtime=1572651714&source=web&token=eIVitMeuiJ1tCwXpe2i4agfBapo=",
-  comedy: "https://stream1.antenaplay.ro/live/smil:ComedyPlay.smil/playlist.m3u8?starttime=1572644519&endtime=1572651749&source=web&token=01HeoTUFbLYR2Y6a29M0zXr9QDM=",
-  cook: "https://stream1.antenaplay.ro/live/smil:CookPlay.smil/playlist.m3u8?starttime=1572644563&endtime=1572651793&source=web&token=CtsQ0-1tUbKrsrSBXUrj8Rkp5E0=",
-  international: "https://ivm.antenaplay.ro/live/ai/playlist.m3u8?starttime=1572644584&endtime=1572651814&source=web&token=YtJaymWLAZ5PtNP5a7Dys4SrAxE="
-}
+  1: "antena1",
+  stars: "antena-stars",
+  3: "antena3",
+  happy: "happy-channel",
+  zu: "zu-tv=",
+  monden: "antena-monden",
+  comedy: "comedy-play",
+  cook: "cookplay",
+  international: "antena-international"
+};
+let browser;
+let page;
 
 module.exports = function(fastify, opts, next) {
 
-  fastify.get('/antena/:channel', function(request, reply) {
+  fastify.get('/antena/:channel', async function(request, reply) {
+    try {
+      const streamLink = await getChannel(request.params.channel);
 
-    reply.redirect(channelsMap[request.params.channel])
+      reply.send("New Page URL\n" + page.url() + "\n" + streamLink);
+
+      //reply.redirect(streamLink)
+    } catch (err) {
+      reply.send(err);
+    }
   })
 
+  async function getChannel(channel) {
+    if (!page) {
+      return puppeteerLogin(channel);
+    }
+
+    await page.goto(`${mainURL}live/${channelsMap[channel]}`);
+
+    console.log("Getting Channel", page.url());
+
+    return returnStreamURL();
+  }
+
+  async function puppeteerLogin(channel) {
+    browser = await puppeteer.launch();
+    page = await browser.newPage();
+
+    await page.setExtraHTTPHeaders({
+      referer: `${mainURL}live/${channelsMap[channel]}`
+    });
+    await page.goto(`${mainURL}intra-in-cont`);
+
+    console.log("Going to page", page.url());
+
+    await page.type('[name="email"]', 'florian.leica@gmail.com');
+    await page.type('[name="password"]', 'mU50j46EKiif');
+    await page.keyboard.press('Enter');
+
+    return returnStreamURL(true);
+
+    //await browser.close();
+  }
+
+  async function returnStreamURL(waitNavigation = false) {
+    try {
+      if (waitNavigation) {
+        await page.waitForNavigation({ waitUntil: "networkidle0" });
+      }
+
+      console.log("Scrapping page", page.url());
+
+      const streamURL = await page.evaluate(() => liveSessionDetails.streamURL);
+
+      return Promise.resolve(streamURL);
+    } catch (er) {
+
+      return Promise.reject(er);
+    }
+  }
 
   next()
 }
