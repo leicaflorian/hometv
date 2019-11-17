@@ -20,12 +20,12 @@ module.exports = function(fastify, opts, next) {
   fastify.get('/antena/:channel', async function(request, reply) {
     try {
       const streamLink = await getChannel(request.params.channel);
-
+      const content = await axios(streamLink);
       console.log("Returning URL", streamLink);
 
-      //reply.send("New Page URL\n" + page.url() + "\n" + streamLink);
+      reply.send(content.data);
 
-      reply.redirect(streamLink)
+      //reply.redirect(streamLink)
     } catch (err) {
       reply.send(err);
     }
