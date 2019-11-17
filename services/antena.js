@@ -47,7 +47,6 @@ module.exports = function(fastify, opts, next) {
     browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
-        '--disable-setuid-sandbox',
       ],
     });
     page = await browser.newPage();
