@@ -6,7 +6,7 @@ const channelsMap = {
   stars: "antena-stars",
   3: "antena3",
   happy: "happy-channel",
-  zu: "zu-tv=",
+  zu: "zu-tv",
   monden: "antena-monden",
   comedy: "comedy-play",
   cook: "cookplay",
@@ -22,7 +22,7 @@ module.exports = function(fastify, opts, next) {
       const streamLink = await getChannel(request.params.channel);
 
       console.log("Returning URL", streamLink);
-      
+
       //reply.send("New Page URL\n" + page.url() + "\n" + streamLink);
 
       reply.redirect(streamLink)
@@ -36,6 +36,9 @@ module.exports = function(fastify, opts, next) {
       return puppeteerLogin(channel);
     }
 
+    console.log(browser.isConnected());
+
+
     await page.goto(`${mainURL}live/${channelsMap[channel]}`);
 
     console.log("Getting Channel", page.url());
@@ -44,12 +47,17 @@ module.exports = function(fastify, opts, next) {
   }
 
   async function puppeteerLogin(channel) {
-    browser = await puppeteer.launch({
-      args: [
-        '--no-sandbox',
-      ],
-    });
-    page = await browser.newPage();
+    if (!browser) {
+      browser = await puppeteer.launch({
+        args: [
+          '--no-sandbox',
+        ],
+      });
+    }
+
+    if (!page) {
+      page = await browser.newPage();
+    }
 
     await page.setExtraHTTPHeaders({
       referer: `${mainURL}live/${channelsMap[channel]}`
@@ -70,12 +78,18 @@ module.exports = function(fastify, opts, next) {
   async function returnStreamURL(waitNavigation = false) {
     try {
       if (waitNavigation) {
-        await page.waitForNavigation({ waitUntil: "networkidle0" });
+        await page.waitForNavigation();
       }
 
       console.log("Scrapping page", page.url());
 
-      const streamURL = await page.evaluate(() => liveSessionDetails.streamURL);
+      const streamURL = await page.evaluate(() => {
+        if (liveSessionDetails) {
+          return liveSessionDetails.streamURL;
+        } else {
+          ""
+        }
+      });
 
       return Promise.resolve(streamURL);
     } catch (er) {
