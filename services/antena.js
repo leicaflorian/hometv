@@ -42,7 +42,12 @@ module.exports = function(fastify, opts, next) {
   }
 
   async function puppeteerLogin(channel) {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+      ],
+    });
     page = await browser.newPage();
 
     await page.setExtraHTTPHeaders({
