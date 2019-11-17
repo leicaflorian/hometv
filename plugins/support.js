@@ -11,6 +11,8 @@ module.exports = fp(function(fastify, opts, next) {
     return 'hugs'
   })
 
+  fastify.register(require('fastify-cookie'));
+
   fastify.register(require('point-of-view'), {
     engine: {
       pug: require('pug'),
