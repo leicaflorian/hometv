@@ -85,11 +85,6 @@ module.exports = function(fastify, opts, next) {
       page = await browser.newPage();
     }
 
-    /* page.authenticate({
-      username: 'florian.leica@gmail.com',
-      password: '5&gt5MBmUUl1fT99'
-    }); */
-
     if (channel) {
       await page.setExtraHTTPHeaders({
         referer: `${mainURL}live/${channelsMap[channel]}`
