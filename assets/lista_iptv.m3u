@@ -34,7 +34,7 @@ https://hometv.herokuapp.com/mediaset/cartoon
 
 
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="La 7" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/253/logo?width=120&theme=dark" group-title="MEDIASET",La 7
-https://d15umi5iaezxgx.cloudfront.net/OUT/DASH/Live.mpd
+https://hometv.herokuapp.com/others/la7
 
 
 #EXTINF:-1 tvg-id="DMAX" tvg-name="DMax" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/256/logo?width=120&theme=dark" group-title="DISCOVERY",DMAX
