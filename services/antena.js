@@ -15,7 +15,7 @@ const channelsMap = {
 let browser;
 let page;
 let linksList = {
-  "1": "https://ivm.antenaplay.ro/live/a1/playlist.m3u8?starttime=1574033943&endtime=1574041173&source=web&token=wCHUu-1kBKAt1WeQcpckHYthxAo=",
+  "1": "https://ivm.antenaplay.ro/live/a1/playlist.m3u8?starttime=1574549606&endtime=1574556836&source=web&token=pSrV9awdTpZXe-3HbW3BHRWMOoA=",
   "3": "https://ivm.antenaplay.ro/live/a3/playlist.m3u8?starttime=1574033944&endtime=1574041174&source=web&token=ZzrtqHkmZew7YpZBOJ124538Wws=",
   "stars": "https://ivm.antenaplay.ro/live/astars/playlist.m3u8?starttime=1574033946&endtime=1574041176&source=web&token=B0PEotg0GnIhdS-Hx4pQ6bhhxIA=",
   "happy": "https://ivm.antenaplay.ro/live/happy/playlist.m3u8?starttime=1574033947&endtime=1574041177&source=web&token=eYTi_o3GJGMdpK1hCIhgc-3GgI4=",

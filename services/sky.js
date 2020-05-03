@@ -2,6 +2,7 @@ const axios = require('axios').default;
 const mainURL = `https://video.sky.it/be/getLivestream?id=`;
 const channelsMap = {
 	tv8: "7",
+	skyarte: "8",
 	cielo: "2",
 	tg24: "1",
 }

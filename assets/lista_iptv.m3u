@@ -27,6 +27,8 @@ https://hometv.herokuapp.com/mediaset/la5
 https://hometv.herokuapp.com/mediaset/iris
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Top Crime" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/193/logo?width=120&theme=dark" group-title="MEDIASET",Top Crime
 https://hometv.herokuapp.com/mediaset/topc
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cine 34" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/574/logo?width=120&theme=dark" group-title="MEDIASET",Cine 34
+https://hometv.herokuapp.com/mediaset/c34
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Boing" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/195/logo?width=120&theme=lidarkght" group-title="MEDIASET",Boing
 https://hometv.herokuapp.com/mediaset/boing
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Cartoonito" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=dark" group-title="MEDIASET",Cartoonito
@@ -86,6 +88,8 @@ http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=179975
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Rai Scuola" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/230/logo?width=120&theme=dark" group-title="RAI",Rai Scuola
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990
+#EXTINF:-1 tvg-id="EPG N/A" tvg-name="Sky Arte" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/88/logo?width=120&theme=dark" group-title="SKY",Sky Arte
+https://hometv.herokuapp.com/sky/skyarte
 
 #EXTINF:-1 tvg-id="EPG N/A" tvg-name="Sky Tg24" tvg-shift="" radio="" tvg-logo="https://api.superguidatv.it/v1/channels/240/logo?width=120&theme=dark" group-title="SKY",Sky Tg24
 https://hometv.herokuapp.com/sky/tg24

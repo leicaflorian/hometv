@@ -18,6 +18,7 @@ const channelsMap = {
   r101: "ER",
   virgin: "EW",
   m4c: "W1",
+  c34: "B6",
 }
 
 function getHLSUrl(resp) {
