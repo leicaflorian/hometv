@@ -1,0 +1,16 @@
+module.exports = [
+  { id: 'r1', code: '2606803', name: 'Rai 1', tvgLogo: '189', tvgName: '', tvgId: '' },
+  { id: 'r2', code: '308718', name: 'Rai 2', tvgLogo: '187', tvgName: '', tvgId: '' },
+  { id: 'r3', code: '308709', name: 'Rai 3', tvgLogo: '188', tvgName: '', tvgId: '' },
+  { id: 'r4', code: '746966', name: 'Rai 4', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'r5', code: '72382', name: 'Rai 5', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rMovie', code: '72381', name: 'Rai Movie', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rPremium', code: '72383', name: 'Rai Premium', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rGulp', code: '4119', name: 'Rai Gulp', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rYoyo', code: '72384', name: 'Rai Yoyo', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rNews', code: '1', name: 'Rai News', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rStoria', code: '746990', name: 'Rai Storia', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rSport', code: '179975', name: 'Rai Sport', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rSport+', code: '4145', name: 'Rai Sport +', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'rScuola', code: '746990', name: 'Rai Scuola', tvgLogo: '', tvgName: '', tvgId: '' },
+]
