@@ -19,6 +19,7 @@
     "ip": "^1.1.5",
     "iptv-playlist-parser": "^0.3.0",
     "jsdom": "^15.2.1",
+    "lodash": "^4.17.20",
     "node-html-parser": "^1.1.16",
     "point-of-view": "^3.7.0",
     "pug": "^2.0.4",
