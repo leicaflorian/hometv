@@ -1,11 +1,11 @@
 'use strict'
 
+require('dotenv').config()
+
 const path = require('path')
 const Fastify = require('fastify')
 const AutoLoad = require('fastify-autoload')
 const channels = require('./config/channels')
-
-require('dotenv').config()
 
 const port = process.env.PORT || '4000'
 const env = process.env.NODE_ENV || 'development'
@@ -27,6 +27,7 @@ for (const group of channels.groups) {
   }
 }
 
+
 //module.exports = function (fastify, opts, next) {
 // Place here your custom code!
 
@@ -46,5 +47,7 @@ fastify.register(AutoLoad, {
   dir: path.join(__dirname, 'services'),
   options: Object.assign({}, opts)
 })
+
+
 
 fastify.listen(port, '0.0.0.0')

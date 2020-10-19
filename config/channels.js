@@ -75,7 +75,7 @@ module.exports = {
       groupTitle: 'Rai',
       channels: require('./channels/rai')
     }, {
-      baseUrl: 'https://apid.sky.it/vdp/v1/getLivestream?id=${code}&isMobile=false',
+      baseUrl: process.env.SITE_URL + '/sky/proxy?id=${code}&isMobile=false',
       groupTitle: 'Sky',
       channels: require('./channels/sky')
     }, {

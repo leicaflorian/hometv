@@ -1,17 +1,17 @@
 'use strict'
 
-const fp = require('fastify-plugin');
+const fp = require('fastify-plugin')
 const resolve = require('path').resolve
 
 // the use of fastify-plugin is required to be able
 // to export the decorators to the outer scope
 
-async function plugin(fastify, opts, next) {
-  fastify.decorate('someSupport', function() {
+async function plugin (fastify, opts, next) {
+  fastify.decorate('someSupport', function () {
     return 'hugs'
   })
 
-  fastify.register(require('fastify-cookie'));
+  fastify.register(require('fastify-cookie'))
 
   fastify.register(require('point-of-view'), {
     engine: {
@@ -25,9 +25,15 @@ async function plugin(fastify, opts, next) {
     }
   })
 
+  fastify.register(require('fastify-http-proxy'), {
+    upstream: 'https://apid.sky.it',
+    prefix: '/sky/proxy', // optional
+    rewritePrefix: '/vdp/v1/getLivestream',
+    http2: false // optional
+  })
+
   next()
 }
-
 
 module.exports = fp(plugin, {
   fastify: '3.x',
