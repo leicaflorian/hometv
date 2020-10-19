@@ -4,7 +4,7 @@ class SkyChannels extends BasicChannel {
   constructor (group) {
     super(group)
 
-    this.axiosSettings = Object.assign({
+    this.axiosSettings = Object.assign({}, this.axiosSettings, {
       withCredentials: true,
       headers: {
         origin: 'https://www.cielotv.it',
