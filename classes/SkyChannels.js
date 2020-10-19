@@ -8,6 +8,10 @@ class SkyChannels extends BasicChannel {
   }
 
   async redirectTo (data) {
+
+    console.log('\n\nSKY')
+    console.log(data)
+
     return data.streaming_url
   }
 }
