@@ -2,20 +2,34 @@
 const fs = require('fs')
 const m3u8Parser = require('iptv-playlist-parser')
 const config = require('../config/channels')
-const { template } = require('lodash')
+const { template, sortBy } = require('lodash')
+
+function addOrderTag () {
+
+}
 
 async function getListaIptv () {
   // const content = await fs.readFileSync('assets/lista_iptv.m3u', 'utf8')
   const content = ['#EXTM3U']
+  const channelsList = []
 
   for (const group of config.groups) {
+    const groupId = group.groupTitle.toLowerCase()
+
     for (const channel of group.channels) {
       const logo = template(config.tvg.logosUrl)
+      const orderId = config.tvg.order.indexOf(`${groupId}.${channel.id}`)
+      const order = orderId >= 0 ? orderId + 1 : orderId
 
-      content.push(`#EXTINF:-1 tvg-id="EPG N/A" tvg-name="${channel.name}" tvg-shift="" radio="" tvg-logo="${logo({ id: channel.logo })}" group-title="${group.groupTitle.toUpperCase()}", ${channel.name}`)
-      content.push(`${process.env.SITE_URL}/${group.groupTitle.toLowerCase()}/${channel.id}`)
+      channelsList.push({
+        order: order,
+        row1: `#EXTINF:${order} tvg-id="EPG N/A" tvg-name="${channel.name}" tvg-shift="" radio="" tvg-logo="${logo({ id: channel.logo })}" group-title="${groupId}", ${channel.name}`,
+        row2: `${process.env.SITE_URL}/${groupId}/${channel.id}`
+      })
     }
   }
+
+  content.push(...sortBy(channelsList, 'order').map(_entry => _entry.row1 + '\n' + _entry.row2))
 
   return content.join('\n')
 }
@@ -31,7 +45,8 @@ module.exports = function (fastify, opts, next) {
     const fs = require('fs')
     const stream = await getListaIptv()
 
-    //reply.header("Content-Type", "application/vnd.apple.mpegurl");
+    // reply.header("Content-Type", "application/vnd.apple.mpegurl");
+    reply.header('Content-Type', 'application/x-mpegURL')
 
     reply.send(stream)
   })

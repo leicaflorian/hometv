@@ -1,3 +1,3 @@
 exports.sportItalia = [
-  { id: 'sportItalia', code: '', name: 'Rai 1', tvgLogo: '189', tvgName: '', tvgId: '' },
+  // { id: 'sportItalia', code: '', name: 'Sport Italia', tvgLogo: '189', tvgName: '', tvgId: '' },
 ]
