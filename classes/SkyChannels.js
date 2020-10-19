@@ -4,6 +4,14 @@ class SkyChannels extends BasicChannel {
   constructor (group) {
     super(group)
 
+    this.axiosSettings = {
+      withCredentials: true,
+      headers: {
+        origin: 'https://www.cielotv.it',
+        referer: 'https://www.cielotv.it/'
+      }
+    }
+
     return super.routeHandler()
   }
 

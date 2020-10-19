@@ -41,7 +41,7 @@ class BasicChannel {
 
       reply.redirect(redirectUrl)
     } catch (er) {
-      const headers = er.request ? er.request.getHeaders() : ""
+      const headers = er.request ? er.request.getHeaders() : ''
 
       console.error(er, headers)
     }
@@ -50,10 +50,16 @@ class BasicChannel {
   async getPlaylist (channelId) {
     const url = this.preparedUrl(channelId)
 
-    return (await axios({
+    console.log('- getting playlist...', url)
+
+    const result = await axios({
       url,
       ...this.axiosSettings
-    })).data
+    })
+
+    console.log('- got playlist with', result.request.getHeaders())
+
+    return result.data
   }
 
   async redirectTo (data) {
