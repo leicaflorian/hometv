@@ -17,10 +17,14 @@ const opts = {
 const fastify = Fastify(opts)
 
 for (const group of channels.groups) {
-  const channelClass = require(`./classes/${group.groupTitle}Channels`)
+  try {
+    const channelClass = require(`./classes/${group.groupTitle}Channels`)
 
-  fastify.get(`/${group.groupTitle.toLowerCase()}/:channel`,
-    new channelClass(group))
+    fastify.get(`/${group.groupTitle.toLowerCase()}/:channel`,
+      new channelClass(group))
+  } catch (er) {
+    console.error(er)
+  }
 }
 
 //module.exports = function (fastify, opts, next) {
