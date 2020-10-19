@@ -92,7 +92,7 @@ module.exports = {
       channels: require('./channels/other').sportItalia
     }, {
       baseUrl: 'https://vid.hls.protv.ro/${code}',
-      groupTitle: 'ProTV',
+      groupTitle: 'ProTv',
       channels: require('./channels/proTv')
     }
   ]
