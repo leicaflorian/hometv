@@ -4,7 +4,7 @@ class DiscoveryChannels extends BasicChannel {
   constructor (group) {
     super(group)
 
-    this.axiosSettings = {
+    this.axiosSettings = Object.assign({
       withCredentials: true,
       headers: {
         referer: 'https://it.dplay.com/nove/',
@@ -13,7 +13,7 @@ class DiscoveryChannels extends BasicChannel {
         // 'Sec-Fetch-Site': 'same-origin',
         // 'Sec-Fetch-Mode': 'cors'
       }
-    }
+    })
 
     return super.routeHandler()
   }
