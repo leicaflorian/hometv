@@ -35,10 +35,16 @@ class BasicChannel {
   }
 
   async workflow (reply, channelId) {
-    const playlist = await this.getPlaylist(channelId)
-    const redirectUrl = await this.redirectTo(playlist)
+    try {
+      const playlist = await this.getPlaylist(channelId)
+      const redirectUrl = await this.redirectTo(playlist)
 
-    reply.redirect(redirectUrl)
+      reply.redirect(redirectUrl)
+    } catch (er) {
+      const headers = er.request ? er.request.getHeaders() : ""
+
+      console.error(er, headers)
+    }
   }
 
   async getPlaylist (channelId) {
