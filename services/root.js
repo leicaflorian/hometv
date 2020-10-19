@@ -4,10 +4,6 @@ const m3u8Parser = require('iptv-playlist-parser')
 const config = require('../config/channels')
 const { template, sortBy } = require('lodash')
 
-function addOrderTag () {
-
-}
-
 async function getListaIptv () {
   // const content = await fs.readFileSync('assets/lista_iptv.m3u', 'utf8')
   const content = ['#EXTM3U']
@@ -23,7 +19,7 @@ async function getListaIptv () {
 
       channelsList.push({
         order: order,
-        row1: `#EXTINF:${order} tvg-id="EPG N/A" tvg-name="${channel.name}" tvg-shift="" radio="" tvg-logo="${logo({ id: channel.logo })}" group-title="${groupId}", ${channel.name}`,
+        row1: `#EXTINF:${order} tvg-id="EPG N/A" tvg-name="${channel.name}" tvg-shift="" radio="" tvg-logo="${logo({ id: channel.tvgLogo })}" group-title="${groupId}", ${channel.name}`,
         row2: `${process.env.SITE_URL}/${groupId}/${channel.id}`
       })
     }
