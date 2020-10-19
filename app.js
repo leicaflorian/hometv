@@ -3,9 +3,12 @@
 const path = require('path')
 const Fastify = require('fastify')
 const AutoLoad = require('fastify-autoload')
+const channels = require('./config/channels')
 
-const port = process.env.PORT || '4000';
-const env = process.env.NODE_ENV || 'development';
+require('dotenv').config()
+
+const port = process.env.PORT || '4000'
+const env = process.env.NODE_ENV || 'development'
 
 const opts = {
   logger: true
@@ -13,6 +16,12 @@ const opts = {
 
 const fastify = Fastify(opts)
 
+for (const group of channels.groups) {
+  const channelClass = require(`./classes/${group.groupTitle}Channels`)
+
+  fastify.get(`/${group.groupTitle.toLowerCase()}/:channel`,
+    new channelClass(group))
+}
 
 //module.exports = function (fastify, opts, next) {
 // Place here your custom code!
@@ -34,4 +43,4 @@ fastify.register(AutoLoad, {
   options: Object.assign({}, opts)
 })
 
-fastify.listen(port, "0.0.0.0")
+fastify.listen(port, '0.0.0.0')
