@@ -13,16 +13,16 @@
 </head>
 <body>
   <main id="app" class="container-fluid">
-    
+
     <div class="content py-4">
 
-      <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4">
         <div class="col" v-for="item of items">
           <div class="card" style="max-width: 400px;">
 
             <div class="row g-0">
               <div class="col-md-4 bg-dark d-flex justify-content-center flex-column p-2">
-                <img :src="item.tvgLogo" class="card-img-top" style="object-fit: cover; object-position: center;">                
+                <img :src="item.tvgLogo" class="card-img-top" style="object-fit: cover; object-position: center;">
               </div>
 
               <div class="col-md-8">

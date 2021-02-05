@@ -1,7 +1,7 @@
 {
-  "name": "my-iptv",
-  "version": "1.0.0",
-  "private": true,
+  "name": "hometv",
+  "version": "2.0.0",
+  "private": false,
   "scripts": {
     "build": "node ace build --production",
     "start": "node server.js",
