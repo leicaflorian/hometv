@@ -84,6 +84,8 @@ class DiscoveryChannels extends BasicChannel {
       return resp.attributes.streaming.hls.url
     } catch (er) {
       console.log(er)
+
+      return ""
     }
   }
 }
