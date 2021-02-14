@@ -32,6 +32,8 @@ export default class ChannelsController {
 
     const url = await ChannelsHandler.getChannel(group, channel)
 
+    return url
+
     // response.header('Content-Type', 'application/x-mpegURL')
     response.redirect(url)
   }
