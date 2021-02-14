@@ -25,7 +25,6 @@ class ChannelsController {
         const group = params.group;
         const channel = params.channel;
         const url = await _ioc_Channels_1.default.getChannel(group, channel);
-        return url;
         response.redirect(url);
     }
 }
