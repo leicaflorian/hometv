@@ -11,6 +11,8 @@ declare interface Channel {
   id: string
   code: string
   name: string
+  key?: string
+  embed?: string
   url: string
   order: number
   groupId: string

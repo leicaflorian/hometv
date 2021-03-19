@@ -4,7 +4,7 @@ import sky from "Config/channels/sky";
 import paramount from "Config/channels/paramount";
 // import discovery from "Config/channels/discovery";
 import other from "Config/channels/other";
-// import proTv from "Config/channels/proTv";
+import proTv from "Config/channels/proTv";
 import {ChannelsConfig} from "../types/ChannelsConfig";
 
 const channels:ChannelsConfig = {
@@ -99,12 +99,12 @@ const channels:ChannelsConfig = {
       baseUrl: 'https://www.sportitalia.com/api/v2/content/57561/access',
       groupTitle: 'SportItalia',
       channels: other.sportItalia
-    }/*, {
+    }, {
       // baseUrl: 'https://vid.hls.protv.ro/${code}',
-      baseUrl: 'https://cmero-ott-live-sec.ssl.cdn.cra.cz/o4amp9ZeBlqGqbw7fG4SFQ==,1610297412/channels/cme-ro-${code}',
+      baseUrl: 'https://cmero-ott-live-sec.ssl.cdn.cra.cz/${key}/channels/cme-ro-${code}/playlist.m3u8',
       groupTitle: 'ProTv',
       channels: proTv
-    }*/
+    }
   ]
 }
 

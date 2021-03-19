@@ -1,6 +1,6 @@
 import axios, {AxiosRequestConfig} from "axios"
 import {template} from 'lodash'
-import {ChannelGroup} from "../../../types/ChannelsList";
+import {Channel, ChannelGroup} from "../../../types/ChannelsList";
 
 abstract class BasicChannel {
   protected readonly axiosSettings: AxiosRequestConfig
@@ -45,6 +45,12 @@ abstract class BasicChannel {
     return urlTmpl({
       code: channel.code
     })
+  }
+
+  protected getChannel(): Channel | null {
+    const result = this.groupData.channels.find(_channel => _channel.id === this.channel)
+
+    return result || null
   }
 
   /**
