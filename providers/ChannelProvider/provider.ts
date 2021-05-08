@@ -4,18 +4,23 @@ import {template, sortBy, get, set, camelCase, upperFirst} from "lodash"
 import {ChannelsIptvList, Channel} from "../../types/ChannelsList";
 import {ChannelsConfig} from "../../types/ChannelsConfig";
 import {BasicChannel} from "./classes/BasicChannel";
+import axios, {AxiosRequestConfig} from "axios"
+import Env from '@ioc:Adonis/Core/Env'
 
 class ChannelsHandler {
   private config: ChannelsConfig = Config.get("channels")
   private readonly IptvList: string[] = []
   private readonly ChannelsList: Channel[] = []
   private channelsInstances = {}
+  private liveTimer: any
 
   constructor() {
     const lists = this.initIptvList()
 
     this.IptvList = lists.iptvList
     this.ChannelsList = lists.channelsList
+
+    this.maintainLive()
   }
 
   public get iptvList() {
@@ -110,6 +115,20 @@ class ChannelsHandler {
       iptvList: content,
       channelsList
     }
+  }
+
+
+ maintainLive() {
+    if(this.liveTimer) {
+      clearTimeout(this.liveTimer)
+    }
+
+    this.liveTimer = setTimeout(async () => {
+        try {
+          await axios.get(Env.get('SITE_URL'))
+        }catch(er) {}
+    }, (100 * 60 * 25))
+
   }
 }
 
