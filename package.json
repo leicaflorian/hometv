@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "build": "node ace build --production",
-    "start": "cd build && yarn install --production && node server.js",
+    "start": "cd build && node server.js",
     "dev": "node ace serve --watch"
   },
   "devDependencies": {
@@ -22,15 +22,22 @@
     "@adonisjs/session": "^4.0.0",
     "@adonisjs/view": "^3.0.0",
     "@types/jsdom": "^16.2.7",
+    "@types/tough-cookie": "^4.0.0",
     "axios": "^0.21.1",
+    "axios-cookiejar-support": "^1.0.1",
     "https": "^1.0.0",
     "https-proxy-agent": "^5.0.0",
     "jsdom": "^16.5.1",
     "lodash": "^4.17.20",
     "pem": "^1.14.4",
     "proxy-addr": "^2.0.6",
+    "qs": "^6.10.0",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.19",
+    "tough-cookie": "^4.0.0",
     "vue": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
