@@ -95,18 +95,15 @@ class SkyChannels extends BasicChannel {
   }
 
   async tryProxy(url: string): Promise<any> {
-    const pendingRequests: Promise<() => AxiosResponse<any>>[] = [];
+    const list: any[] = [...italianProxies];
 
-    italianProxies.forEach((proxy) => {
-      /* 
-          if (typeof result.data !== "string") {
-            resolve(result.data);
-          }
+    function random_sort() {
+      return Math.random() - 0.5;
+    }
 
-          console.log("SKY: Call responded ", result.data); */
-    });
+    list.sort(random_sort);
 
-    for (let proxy of italianProxies) {
+    for (let proxy of list) {
       try {
         const httpsAgent = new SocksProxyAgent("socks4://" + proxy);
         const client = this.axiosCall.create({ httpsAgent, timeout: 2000 });
