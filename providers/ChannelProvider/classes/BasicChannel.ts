@@ -23,7 +23,7 @@ abstract class BasicChannel {
     try {
       return this.workflow()
     } catch (er) {
-      console.error(er)
+      console.error(er.message)
 
       throw er
     }

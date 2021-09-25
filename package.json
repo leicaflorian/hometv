@@ -25,6 +25,7 @@
     "@types/tough-cookie": "^4.0.0",
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
+    "dayjs": "^1.10.7",
     "https": "^1.0.0",
     "https-proxy-agent": "^5.0.0",
     "jsdom": "^16.5.1",
@@ -33,6 +34,7 @@
     "proxy-addr": "^2.0.6",
     "qs": "^6.10.0",
     "reflect-metadata": "^0.1.13",
+    "socks-proxy-agent": "^6.1.0",
     "source-map-support": "^0.5.19",
     "tough-cookie": "^4.0.0",
     "vue": "^3.0.5"
