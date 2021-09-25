@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Env_1 = __importDefault(global[Symbol.for('ioc.use')]("Adonis/Core/Env"));
+const Env_1 = __importDefault(require("@ioc:Adonis/Core/Env"));
 const hashConfig = {
     default: Env_1.default.get('HASH_DRIVER', 'argon'),
     list: {

@@ -23,8 +23,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChannelsHandler = void 0;
-const Config_1 = __importDefault(global[Symbol.for('ioc.use')]("Adonis/Core/Config"));
+const Config_1 = __importDefault(require("@ioc:Adonis/Core/Config"));
 const lodash_1 = require("lodash");
+const axios_1 = __importDefault(require("axios"));
+const Env_1 = __importDefault(require("@ioc:Adonis/Core/Env"));
 class ChannelsHandler {
     constructor() {
         this.config = Config_1.default.get("channels");
@@ -34,6 +36,7 @@ class ChannelsHandler {
         const lists = this.initIptvList();
         this.IptvList = lists.iptvList;
         this.ChannelsList = lists.channelsList;
+        this.maintainLive();
     }
     get iptvList() {
         return this.IptvList.join("\n");
@@ -99,6 +102,17 @@ class ChannelsHandler {
             iptvList: content,
             channelsList
         };
+    }
+    maintainLive() {
+        if (this.liveTimer) {
+            clearTimeout(this.liveTimer);
+        }
+        this.liveTimer = setTimeout(async () => {
+            try {
+                await axios_1.default.get(Env_1.default.get('SITE_URL'));
+            }
+            catch (er) { }
+        }, (100 * 60 * 25));
     }
 }
 exports.ChannelsHandler = ChannelsHandler;

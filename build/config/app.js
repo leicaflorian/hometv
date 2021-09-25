@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validator = exports.profiler = exports.logger = exports.http = exports.appKey = void 0;
 const proxy_addr_1 = __importDefault(require("proxy-addr"));
-const Env_1 = __importDefault(global[Symbol.for('ioc.use')]("Adonis/Core/Env"));
+const Env_1 = __importDefault(require("@ioc:Adonis/Core/Env"));
 exports.appKey = Env_1.default.get('APP_KEY');
 exports.http = {
     allowMethodSpoofing: false,

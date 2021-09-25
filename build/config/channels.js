@@ -3,11 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const mediaset_1 = __importDefault(global[Symbol.for('ioc.use')]("Config/channels/mediaset"));
-const rai_1 = __importDefault(global[Symbol.for('ioc.use')]("Config/channels/rai"));
-const sky_1 = __importDefault(global[Symbol.for('ioc.use')]("Config/channels/sky"));
-const paramount_1 = __importDefault(global[Symbol.for('ioc.use')]("Config/channels/paramount"));
-const other_1 = __importDefault(global[Symbol.for('ioc.use')]("Config/channels/other"));
+const mediaset_1 = __importDefault(require("Config/channels/mediaset"));
+const rai_1 = __importDefault(require("Config/channels/rai"));
+const sky_1 = __importDefault(require("Config/channels/sky"));
+const paramount_1 = __importDefault(require("Config/channels/paramount"));
+const other_1 = __importDefault(require("Config/channels/other"));
+const proTv_1 = __importDefault(require("Config/channels/proTv"));
+const antena_1 = __importDefault(require("Config/channels/antena"));
 const channels = {
     tvg: {
         logosUrl: 'https://api.superguidatv.it/v1/channels/${id}/logo?width=120&theme=dark',
@@ -65,6 +67,7 @@ const channels = {
             'protv.prox',
             'protv.progold',
             'protv.procinema',
+            'antena.antena1'
         ]
     },
     groups: [
@@ -89,6 +92,14 @@ const channels = {
             baseUrl: 'https://www.sportitalia.com/api/v2/content/57561/access',
             groupTitle: 'SportItalia',
             channels: other_1.default.sportItalia
+        }, {
+            baseUrl: 'https://cmero-ott-live-sec.ssl.cdn.cra.cz/${key}/channels/cme-ro-${code}/playlist.m3u8',
+            groupTitle: 'ProTv',
+            channels: proTv_1.default
+        }, {
+            baseUrl: '',
+            groupTitle: 'Antena',
+            channels: antena_1.default
         }
     ]
 };

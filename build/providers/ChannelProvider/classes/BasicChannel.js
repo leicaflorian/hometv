@@ -31,6 +31,10 @@ class BasicChannel {
             code: channel.code
         });
     }
+    getChannel() {
+        const result = this.groupData.channels.find(_channel => _channel.id === this.channel);
+        return result || null;
+    }
 }
 exports.BasicChannel = BasicChannel;
 //# sourceMappingURL=BasicChannel.js.map
