@@ -23,6 +23,7 @@ class SkyChannels extends BasicChannel {
       const result = await this.axiosCall({
         url,
         method: "get",
+        timeout: 15000,
         proxy: {
           host: '156.54.212.62',
           port: 3128
@@ -35,7 +36,7 @@ class SkyChannels extends BasicChannel {
         }*/
       })
 
-      console.log("SKY: Call responded ", result.data);
+      console.log("SKY: Call responded ", result.data.streaming_url);
 
       if (!result.data.streaming_url) {
         throw new Error("Can't find the requested channel")
