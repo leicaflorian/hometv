@@ -4,7 +4,7 @@ import {template, sortBy, get, set, camelCase, upperFirst} from "lodash"
 import {ChannelsIptvList, Channel} from "../../types/ChannelsList";
 import {ChannelsConfig} from "../../types/ChannelsConfig";
 import {BasicChannel} from "./classes/BasicChannel";
-import axios, {AxiosRequestConfig} from "axios"
+import axios from "axios"
 import Env from '@ioc:Adonis/Core/Env'
 
 class ChannelsHandler {

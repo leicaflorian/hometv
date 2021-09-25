@@ -34,7 +34,7 @@ abstract class BasicChannel {
    *
    * @private
    */
-  protected preparedUrl(): string {
+  protected preparedUrl(code?: string): string {
     const channel = this.groupData.channels.find(_channel => _channel.id === this.channel)
     const urlTmpl = template(this.groupData.baseUrl)
 
@@ -43,7 +43,7 @@ abstract class BasicChannel {
     }
 
     return urlTmpl({
-      code: channel.code
+      code: code || channel.code
     })
   }
 

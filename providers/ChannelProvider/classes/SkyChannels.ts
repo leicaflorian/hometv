@@ -1,4 +1,5 @@
 import {BasicChannel} from "./BasicChannel";
+import HttpException from "@adonisjs/http-server/build/src/Exceptions/HttpException.js"
 
 class SkyChannels extends BasicChannel {
 
@@ -20,6 +21,10 @@ class SkyChannels extends BasicChannel {
       const result = await this.axiosCall({
         url,
         method: "get",
+        proxy: {
+          host: '156.54.212.62',
+          port: 3128
+        }
         /*withCredentials: true,
         headers: {
           origin: 'https://www.cielotv.it',
@@ -28,10 +33,14 @@ class SkyChannels extends BasicChannel {
         }*/
       })
 
-      return result.data
+      if (!result.data.streaming_url) {
+        throw new Error("Can't find the requested channel")
+      }
+
+      return result.data.streaming_url 
     } catch (er) {
       console.error(er)
-      return er
+      throw er
     }
   }
 }
