@@ -15,5 +15,5 @@ export default [
   { id: 'raiSport', code: '358071', name: 'Rai Sport', tvgLogo: '224', tvgName: '', tvgId: '' },
   { id: 'raiSportPiuHd', code: '358025', name: 'Rai Sport +', tvgLogo: '223', tvgName: '', tvgId: '' },
   { id: 'raiScuola', code: '747011', name: 'Rai Scuola', tvgLogo: '230', tvgName: '', tvgId: '' },
-  { id: 'raiRadio2', code: '747011', name: 'Rai Radio 2', tvgLogo: '', tvgName: '', tvgId: '' },
+  { id: 'raiRadio2', code: '747011', name: 'Rai Radio 2', tvgLogo: 'https://www.raiplayradio.it/dl/components/img/radio/loghi/radio2.svg', tvgName: '', tvgId: '' },
 ] as Channel[]

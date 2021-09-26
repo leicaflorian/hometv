@@ -2,7 +2,7 @@ import mediaset from "Config/channels/mediaset";
 import rai from "Config/channels/rai";
 import sky from "Config/channels/sky";
 import paramount from "Config/channels/paramount";
-// import discovery from "Config/channels/discovery";
+import discovery from "Config/channels/discovery";
 import other from "Config/channels/other";
 import proTv from "Config/channels/proTv";
 import { ChannelsConfig } from "../types/ChannelsConfig";
@@ -68,15 +68,18 @@ const channels: ChannelsConfig = {
       "mediaset.virgin",
       "mediaset.rmc",
       "rai.raiRadio2",
+      "paramount.vh1",
 
       // Romania
-      "protv.protv",
+      /* "protv.protv",
       "protv.protv2",
       "protv.prox",
       "protv.progold",
-      "protv.procinema",
+      "protv.procinema", */
 
-      "antena.antena1",
+      "antena.comedy",
+      "antena.cook",
+      "antena.monden",
     ],
   },
   groups: [
@@ -104,11 +107,15 @@ const channels: ChannelsConfig = {
       groupTitle: "Paramount",
       channels: paramount,
     },
-    /* {
-      baseUrl: 'https://disco-api.discoveryplus.it/playback/v2/channelPlaybackInfo/${code}?usePreAuth=true',
-      groupTitle: 'Discovery',
-      channels: discovery
-    }, */ {
+    {
+      baseUrl:
+        //"https://eu2-prod.disco-api.com/playback/videoPlaybackInfo/${code}?usePreAuth=true",
+        //"https://disco-api.discoveryplus.it/playback/v2/channelPlaybackInfo/${code}?usePreAuth=true",
+        "https://sbshdlu5-lh.akamaihd.net/i/${code}/master.m3u8",
+      groupTitle: "Discovery",
+      channels: discovery,
+    },
+    {
       baseUrl: "https://www.sportitalia.com/api/v2/content/57561/access",
       groupTitle: "SportItalia",
       channels: other.sportItalia,
@@ -121,7 +128,7 @@ const channels: ChannelsConfig = {
       channels: proTv,
     },
     {
-      baseUrl: "",
+      baseUrl: "https://stream1.antenaplay.ro/live/smil:${code}.smil/playlist.m3u8",
       groupTitle: "Antena",
       channels: antena,
     },

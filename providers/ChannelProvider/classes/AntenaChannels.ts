@@ -75,7 +75,7 @@ class AntenaChannels extends BasicChannel {
     //const channel = this.getChannel();
     //let result = "";
 
-    await this.login();
+    //await this.login();
 
     // First must login
 
@@ -84,7 +84,7 @@ class AntenaChannels extends BasicChannel {
     // third, get the link from the html script
 
     try {
-      return "";
+      return this.preparedUrl();
     } catch (er) {
       return "";
     }

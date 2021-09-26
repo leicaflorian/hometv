@@ -2,7 +2,6 @@ import { BasicChannel } from "./BasicChannel";
 
 import dayjs from "dayjs";
 import { SocksProxyAgent } from "socks-proxy-agent";
-import { HttpsProxyAgent } from "https-proxy-agent";
 import { AxiosResponse } from "axios";
 
 const italianProxies = [
@@ -43,6 +42,8 @@ const italianProxies = [
   "37.34.74.186:4145",
 ];
 
+const workingProxies: Record<string, number> = {};
+
 class SkyChannels extends BasicChannel {
   cache: Record<string, { lastFetch: Date; lastUrl: string }> = {};
 
@@ -53,12 +54,14 @@ class SkyChannels extends BasicChannel {
       throw new Error("Unknown channel");
     }
 
+    console.log("datesDiff", dayjs().diff(dayjs(this.cache[channel.id]?.lastFetch), "minutes"));
+    
     // if the last fetch is older than 10 min, refetch data
     if (
       this.cache[channel.id] &&
       this.cache[channel.id].lastFetch &&
       this.cache[channel.id].lastUrl &&
-      dayjs(this.cache[channel.id].lastFetch).diff(dayjs(), "minutes") < 10
+      dayjs().diff(dayjs(this.cache[channel.id].lastFetch), "minutes") < 10
     ) {
       return this.cache[channel.id].lastUrl;
     }
@@ -68,12 +71,6 @@ class SkyChannels extends BasicChannel {
     try {
       console.log("SKY: Making call to ", url);
 
-      /*  const result = await this.axiosCall({
-        url: "https://jsonplaceholder.typicode.com/todos/1",
-        method: "get",
-        timeout: 55000,
-        httpsAgent: new SocksProxyAgent("socks4://" + italianProxies[0]),
-      }); */
       const result = await this.tryProxy(url);
       console.log("SKY: Call responded ", result);
 
@@ -97,26 +94,36 @@ class SkyChannels extends BasicChannel {
   async tryProxy(url: string): Promise<any> {
     const list: any[] = [...italianProxies];
 
-    function random_sort() {
-      return Math.random() - 0.5;
-    }
-
-    list.sort(random_sort);
+    list.sort(() => Math.random() - 0.5);
+    list.sort((a) => (workingProxies[a] === undefined) ? 0 : -workingProxies[a])
 
     for (let proxy of list) {
+      // creates a sort of priority list of ips to use, based on their working times
+      if (workingProxies[proxy] === undefined) {
+        workingProxies[proxy] = 0;
+      }
+
       try {
         const httpsAgent = new SocksProxyAgent("socks4://" + proxy);
-        const client = this.axiosCall.create({ httpsAgent, timeout: 2000 });
+        httpsAgent.timeout = 5000 // set timeout to 5 minute per each call
+
+        const client = this.axiosCall.create({ httpsAgent });
 
         console.log("trying proxy", proxy);
 
         const result: AxiosResponse<any> = await client.get(url);
 
         if (typeof result.data !== "string") {
+          workingProxies[proxy] += 1;
+
           return Promise.resolve(result.data);
           break;
+        } else {
+          workingProxies[proxy] -= 1;
         }
-      } catch (er) {}
+      } catch (er) {
+        workingProxies[proxy] -= 1;
+      }
     }
 
     /* return Promise.any(pendingRequests).then((resp) => {

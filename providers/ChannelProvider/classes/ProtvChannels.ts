@@ -51,21 +51,34 @@ class ProtvChannels extends BasicChannel {
     await this.login();
 
     try {
-      const dom = await this.JSDOM.fromURL(channel?.embed ?? "", {
+      const dom = await this.JSDOM.fromURL(
+        "https://protvplus.ro/api/v1/user/live?v=fd2967d3-7c3a-49df-89e0-713c63b68ec4&ch=1",
+        {
+          pretendToBeVisual: true,
+          cookieJar: this.cookieJar,
+          resources: "usable",
+        }
+      );
+
+      /* const dom = await this.JSDOM.fromURL(channel?.embed ?? "", {
         pretendToBeVisual: true,
         cookieJar: this.cookieJar,
-      });
+      }); */
       const document = dom.window.document;
+      const iframe = document.querySelector("iframe");
 
-      for (const script of document.scripts) {
-        if (script.text.includes("Player.init")) {
-          const match = script.textContent.match(/(src).*(m3u8)/)[0];
+      iframe.contentWindow.onload = () => {
+        for (const script of iframe.contentDocument.scripts) {
+          if (script.text.includes("Player.init")) {
+            const match = script.textContent.match(/(src).*(m3u8)/)[0];
 
-          result = match.replace(/src.*"/, "");
+            result = match.replace(/src.*"/, "");
+            Promise.resolve(result.replace(/\\/g, ""));
+          }
         }
-      }
+      };
 
-      return result.replace(/\\/g, "");
+     
     } catch (er) {
       console.log(er);
       return "";

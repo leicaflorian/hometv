@@ -39,6 +39,14 @@ const proxyList = [
   "37.34.74.186:4145",
 ];
 
+const romaniaList =[
+  "86.123.166.109:8080",
+  "31.14.49.248:8081",
+  "89.238.255.34:8082",
+  "89.35.236.34:8080",
+  "188.173.39.232:3128",
+]
+
 // replace with your proxy's hostname and port
 const proxyHost = "106.240.89.60";
 const proxyPort = 4145;
@@ -54,12 +62,18 @@ function makeCall(proxy) {
 
   // create the socksAgent for axios
   const httpsAgent = new SocksProxyAgent(proxyOptions);
+  httpsAgent.timeout = 5000;
 
   // the baseUrl for the api you are going to hit
   const baseUrl = 'https://google.com';
 
   // create a new axios instance
-  const client = axios.create({ httpsAgent });
+  const client = axios.create({ 
+    proxy: {
+      host: proxy.split(":")[0],
+      port: proxy.split(":")[1]
+    }
+   });
 
   const googlePage = client.get('https://jsonplaceholder.typicode.com/todos/1')
     .then(res => {
@@ -89,6 +103,6 @@ function checkIsLast() {
 }
 
 
-proxyList.forEach(proxy => {
+romaniaList.forEach(proxy => {
   makeCall(proxy);
 });
