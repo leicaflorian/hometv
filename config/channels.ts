@@ -35,8 +35,8 @@ const channels: ChannelsConfig = {
       "discovery.realtime",
       "discovery.food",
       "discovery.giallo",
-      "discovery.k2",
-      "discovery.frisbee",
+      /* "discovery.k2",
+      "discovery.frisbee", */
       "sky.tv8",
       "sky.cielo",
       "paramount.spike",
