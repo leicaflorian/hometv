@@ -120,15 +120,16 @@ const channels: ChannelsConfig = {
       groupTitle: "SportItalia",
       channels: other.sportItalia,
     },
-    {
+    /*  {
       // baseUrl: 'https://vid.hls.protv.ro/${code}',
       baseUrl:
         "https://cmero-ott-live-sec.ssl.cdn.cra.cz/${key}/channels/cme-ro-${code}/playlist.m3u8",
       groupTitle: "ProTv",
       channels: proTv,
-    },
+    }, */
     {
-      baseUrl: "https://stream1.antenaplay.ro/live/smil:${code}.smil/playlist.m3u8",
+      baseUrl:
+        "https://stream1.antenaplay.ro/live/smil:${code}.smil/playlist.m3u8",
       groupTitle: "Antena",
       channels: antena,
     },
