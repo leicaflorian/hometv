@@ -144,5 +144,12 @@ export default [
     tvgLogo: "574",
     tvgName: "Cine34",
     tvgId: "",
+  },{
+    id: "27",
+    code: "TS",
+    name: "27",
+    tvgLogo: "601",
+    tvgName: "27",
+    tvgId: "",
   },
 ] as Channel[];

@@ -2,6 +2,12 @@ import { BasicChannel } from "./BasicChannel";
 
 class MediasetChannels extends BasicChannel {
   async workflow() {
+    const channel = this.getChannel();
+  
+    if (channel?.id === "20") {
+      return "http://ultimateiptv.me:8080/nojomtv.com/R9cgHozQpq/265011390"
+    }
+  
     const url = this.preparedUrl();
     const result = await this.axiosCall({
       url,
