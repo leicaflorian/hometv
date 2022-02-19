@@ -23,8 +23,8 @@ class MediasetChannels extends BasicChannel {
 
     console.log(urlList);
 
-    // return mpegUrl.publicUrls[0];
-    return result.data.response.publicUrl;
+    return mpegUrl.publicUrls[0];
+    // return result.data.response.publicUrl;
   }
 }
 
