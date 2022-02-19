@@ -95,8 +95,9 @@ const channels: ChannelsConfig = {
       channels: rai,
     },
     {
-      baseUrl:
-        "https://apid.sky.it/vdp/v1/getLivestream?id=${code}&isMobile=false",
+      // url normale non va per via dei cors su tivumate
+      // baseUrl: "https://apid.sky.it/vdp/v1/getLivestream?id=${code}&isMobile=false",
+      baseUrl: "https://www.mytivu.it/Application/Channels/${code}.php",
       groupTitle: "Sky",
       channels: sky,
     },

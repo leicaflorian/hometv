@@ -67,6 +67,8 @@ class SkyChannels extends BasicChannel {
     // }
   
     const url = this.preparedUrl();
+    
+    return url;
   
     try {
       const res = await this.axiosCall.get(url);
