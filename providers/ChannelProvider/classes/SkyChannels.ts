@@ -1,6 +1,6 @@
 import { BasicChannel } from "./BasicChannel";
 
-import dayjs from "dayjs";
+// import dayjs from "dayjs";
 import { SocksProxyAgent } from "socks-proxy-agent";
 import { AxiosResponse } from "axios";
 
@@ -49,41 +49,42 @@ class SkyChannels extends BasicChannel {
 
   async workflow(): Promise<string> {
     const channel = this.getChannel();
-
+  
     if (!channel) {
       throw new Error("Unknown channel");
     }
-
-    console.log("datesDiff", dayjs().diff(dayjs(this.cache[channel.id]?.lastFetch), "minutes"));
-    
+  
+    // console.log("datesDiff", dayjs().diff(dayjs(this.cache[channel.id]?.lastFetch), "minutes"));
+  
     // if the last fetch is older than 10 min, refetch data
-    if (
-      this.cache[channel.id] &&
-      this.cache[channel.id].lastFetch &&
-      this.cache[channel.id].lastUrl &&
-      dayjs().diff(dayjs(this.cache[channel.id].lastFetch), "minutes") < 10
-    ) {
-      return this.cache[channel.id].lastUrl;
-    }
-
+    // if (
+    //   this.cache[channel.id] &&
+    //   this.cache[channel.id].lastFetch &&
+    //   this.cache[channel.id].lastUrl &&
+    //   dayjs().diff(dayjs(this.cache[channel.id].lastFetch), "minutes") < 10
+    // ) {
+    //   return this.cache[channel.id].lastUrl;
+    // }
+  
     const url = this.preparedUrl();
-
+  
     try {
-      console.log("SKY: Making call to ", url);
-
-      const result = await this.tryProxy(url);
-      console.log("SKY: Call responded ", result);
-
-      if (!result || !result.streaming_url) {
-        throw new Error("Can't find the requested channel");
-      }
-
-      this.cache[channel.id] = {
-        lastFetch: new Date(),
-        lastUrl: result.streaming_url,
-      };
-
-      return result.streaming_url;
+      const res = await this.axiosCall.get(url);
+      // console.log("SKY: Making call to ", url);
+    
+      // const result = await this.tryProxy(url);
+      // console.log("SKY: Call responded ", result);
+    
+      // if (!result || !result.streaming_url) {
+      //   throw new Error("Can't find the requested channel");
+      // }
+    
+      // this.cache[channel.id] = {
+      //   lastFetch: new Date(),
+      //   lastUrl: result.streaming_url,
+      // };
+    
+      return res.data.streaming_url;
     } catch (er) {
       console.log(er);
 

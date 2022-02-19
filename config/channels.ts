@@ -4,7 +4,6 @@ import sky from "Config/channels/sky";
 import paramount from "Config/channels/paramount";
 import discovery from "Config/channels/discovery";
 import other from "Config/channels/other";
-import proTv from "Config/channels/proTv";
 import { ChannelsConfig } from "../types/ChannelsConfig";
 import antena from "Config/channels/antena";
 
@@ -19,7 +18,7 @@ const channels: ChannelsConfig = {
       "mediaset.r4",
       "mediaset.c5",
       "mediaset.i1",
-      "mediaset.20",
+      // "mediaset.20",
       "mediaset.focus",
       "mediaset.extra",
       "mediaset.i2",
@@ -39,8 +38,8 @@ const channels: ChannelsConfig = {
       "discovery.frisbee", */
       "sky.tv8",
       "sky.cielo",
-      "paramount.spike",
-      "paramount.paramount",
+      // "paramount.spike",
+      // "paramount.paramount",
       "rai.rai4",
       "rai.rai5",
       "rai.raiMovie",
