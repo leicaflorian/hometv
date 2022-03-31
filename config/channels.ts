@@ -1,10 +1,10 @@
+import {ChannelsConfig} from "../types/ChannelsConfig";
 import mediaset from "Config/channels/mediaset";
 import rai from "Config/channels/rai";
 import sky from "Config/channels/sky";
 import paramount from "Config/channels/paramount";
 import discovery from "Config/channels/discovery";
 import other from "Config/channels/other";
-import {ChannelsConfig} from "../types/ChannelsConfig";
 import antena from "Config/channels/antena";
 
 /**

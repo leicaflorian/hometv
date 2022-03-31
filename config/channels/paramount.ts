@@ -1,7 +1,7 @@
 import {Channel} from "../../types/ChannelsList";
 
 export default [
-  {
+  /*{
     id: "spike",
     code: "829515",
     name: "Spike",
@@ -16,7 +16,7 @@ export default [
     tvgLogo: "299",
     tvgName: "",
     tvgId: "",
-  },
+  },*/
   {
     id: "vh1",
     code: "195657",
