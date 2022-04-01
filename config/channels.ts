@@ -6,6 +6,7 @@ import paramount from "Config/channels/paramount";
 import discovery from "Config/channels/discovery";
 import other from "Config/channels/other";
 import antena from "Config/channels/antena";
+import test from 'Config/channels/test'
 
 /**
  * usefull lists
@@ -92,6 +93,11 @@ const channels: ChannelsConfig = {
   },
   groups: [
     {
+      baseUrl:
+        "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd",
+      groupTitle: "Test",
+      channels: test,
+    }, {
       baseUrl:
         "https://static3.mediasetplay.mediaset.it/apigw/nownext/${code}.json",
       groupTitle: "Mediaset",
