@@ -8,6 +8,7 @@ export default [
     tvgLogo: "189",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "c5",
@@ -16,6 +17,7 @@ export default [
     tvgLogo: "187",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "i1",
@@ -24,6 +26,7 @@ export default [
     tvgLogo: "188",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "i2",
@@ -32,6 +35,7 @@ export default [
     tvgLogo: "191",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "20",
@@ -40,6 +44,7 @@ export default [
     tvgLogo: "443",
     tvgName: "",
     tvgId: 7,
+    mpd: true
   },
   {
     id: "la5",
@@ -48,6 +53,7 @@ export default [
     tvgLogo: "190",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "iris",
@@ -56,6 +62,7 @@ export default [
     tvgLogo: "192",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "focus",
@@ -64,6 +71,7 @@ export default [
     tvgLogo: "249",
     tvgName: "Focus",
     tvgId: "",
+    mpd: true
   },
   {
     id: "extra",
@@ -72,6 +80,7 @@ export default [
     tvgLogo: "194",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "topc",
@@ -80,6 +89,7 @@ export default [
     tvgLogo: "193",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "boing",
@@ -88,6 +98,7 @@ export default [
     tvgLogo: "195",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "cartoon",
@@ -96,6 +107,7 @@ export default [
     tvgLogo: "196",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "tg24",
@@ -104,6 +116,7 @@ export default [
     tvgLogo: "197",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "r101",
@@ -112,6 +125,7 @@ export default [
     tvgLogo: "463",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "r105",
@@ -120,6 +134,7 @@ export default [
     tvgLogo: "460",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "virgin",
@@ -128,6 +143,7 @@ export default [
     tvgLogo: "461",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "rmc",
@@ -136,6 +152,7 @@ export default [
     tvgLogo: "462",
     tvgName: "",
     tvgId: "",
+    mpd: true
   },
   {
     id: "c34",
@@ -144,6 +161,7 @@ export default [
     tvgLogo: "574",
     tvgName: "Cine34",
     tvgId: "",
+    mpd: true
   },{
     id: "27",
     code: "TS",
@@ -151,5 +169,6 @@ export default [
     tvgLogo: "601",
     tvgName: "27",
     tvgId: "",
+    mpd: true
   },
 ] as Channel[];

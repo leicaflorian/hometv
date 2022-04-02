@@ -21,7 +21,8 @@ declare interface Channel {
   tvgShift: string
   tvgName: string
   tvgLogo: string
-  radio: string
+  radio: string,
+  mpd?: boolean,
 }
 
 declare interface ChannelGroup {

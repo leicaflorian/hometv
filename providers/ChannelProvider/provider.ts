@@ -88,13 +88,14 @@ class ChannelsHandler {
         const logo = this.getLogoUrl(channel)
         const orderId = this.config.tvg.order.indexOf(`${groupId}.${channel.id}`)
         const order = orderId >= 0 ? orderId + 1 : orderId
+        const mpd = channel.mpd ? `.mpd` : ''
 
         channelsList.push({
           ...channel,
           order,
           tvgLogo: logo,
           groupTitle: group.groupTitle,
-          url: `${process.env.SITE_URL}/${groupId}/${channel.id}.mpd`
+          url: `${process.env.SITE_URL}/${groupId}/${channel.id}${mpd}`
         })
 
         channelsIptvList.push({
@@ -109,7 +110,7 @@ class ChannelsHandler {
             `group-title="${group.groupTitle || ''}"`,
             `, ${channel.name}`
           ].join(" "),
-          row2: `${process.env.SITE_URL}/${groupId}/${channel.id}.mpd`
+          row2: `${process.env.SITE_URL}/${groupId}/${channel.id}${mpd}`
         })
       }
     }

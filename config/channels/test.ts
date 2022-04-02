@@ -7,6 +7,8 @@ export default [
     name: 'Test',
     tvgLogo: '',
     tvgName: '',
-    tvgId: ''
+    tvgId: '',
+    // must add mpd extension at the end
+    mpd: true
   }
 ] as Channel[]
