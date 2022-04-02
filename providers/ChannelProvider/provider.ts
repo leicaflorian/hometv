@@ -109,7 +109,7 @@ class ChannelsHandler {
             `group-title="${group.groupTitle || ''}"`,
             `, ${channel.name}`
           ].join(" "),
-          row2: `${process.env.SITE_URL}/${groupId}/${channel.id}`
+          row2: `${process.env.SITE_URL}/${groupId}/${channel.id}.mpd`
         })
       }
     }
