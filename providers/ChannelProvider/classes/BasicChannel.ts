@@ -6,6 +6,8 @@ abstract class BasicChannel {
   protected readonly axiosSettings: AxiosRequestConfig
   protected channel: string
   protected axiosCall = axios
+  
+  public headers: any;
 
   constructor(private groupData: ChannelGroup) {
 

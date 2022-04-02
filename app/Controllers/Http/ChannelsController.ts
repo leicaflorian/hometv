@@ -28,10 +28,17 @@ export default class ChannelsController {
 
   async getChannel({params, response}: HttpContextContract) {
     const group = params.group
-    const channel = params.channel
-
+    const channel = params.channel.replace(".mpd", "")
+  
     const url = await ChannelsHandler.getChannel(group, channel)
-
+    const headers = ChannelsHandler.getChannelHeaders(group)
+  
+    if (headers) {
+      Object.keys(headers).forEach((headerKey) => {
+        response.header(headerKey, headers[headerKey])
+      })
+    }
+  
     // response.header('Content-Type', 'application/x-mpegURL')
     response.redirect(url)
   }

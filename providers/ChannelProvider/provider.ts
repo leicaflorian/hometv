@@ -45,25 +45,31 @@ class ChannelsHandler {
       const className = upperFirst(camelCase(group)) + "Channels"
       const classToUse = (await import(`./classes/${className}`)).default
       const groupData = this.config.groups.find(_group => _group.groupTitle.toLowerCase() === group.toLowerCase())
-
+  
       set(this.channelsInstances, `${group}`, new classToUse(groupData))
-
+  
       channelInstance = get(this.channelsInstances, `${group}`)
     }
-
+  
     return await channelInstance.handle(channel)
   }
-
-  private getLogoUrl(channel) {
+  
+  public getChannelHeaders (group: string) {
+    let channelInstance: BasicChannel = get(this.channelsInstances, `${group}`)
+    
+    return channelInstance.headers
+  }
+  
+  private getLogoUrl (channel) {
     const logo = template(this.config.tvg.logosUrl)
-
-    if (channel.tvgLogo.startsWith("http")) {
+    
+    if (channel.tvgLogo.startsWith('http')) {
       return channel.tvgLogo
     }
-
-    return logo({id: channel.tvgLogo})
+    
+    return logo({ id: channel.tvgLogo })
   }
-
+  
   /**
    * Prepare the iptvList and the channelsList by parsing the configurations.
    *
@@ -88,7 +94,7 @@ class ChannelsHandler {
           order,
           tvgLogo: logo,
           groupTitle: group.groupTitle,
-          url: `${process.env.SITE_URL}/${groupId}/${channel.id}`
+          url: `${process.env.SITE_URL}/${groupId}/${channel.id}.mpd`
         })
 
         channelsIptvList.push({
