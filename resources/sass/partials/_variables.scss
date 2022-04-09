@@ -1,0 +1,18 @@
+//@import "bootstrap/scss/variables";
+
+$primary: #FA58B6;
+$secondary: #7A0BC0;
+$dark: #270082;
+
+$body-bg: #1A1A40;
+$body-color: white;
+
+$border-color: $secondary;
+$card-bg: $dark;
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --dark: #{$dark};
+  --body-bg: #{$body-bg};
+}

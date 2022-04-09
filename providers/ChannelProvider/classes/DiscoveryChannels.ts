@@ -1,5 +1,6 @@
 import { AxiosResponse } from "axios";
 import { BasicChannel } from "./BasicChannel";
+/*
 
 interface DiscoveryResp {
   attributes: {
@@ -39,6 +40,7 @@ interface DiscoveryResp {
   id: string;
   type: string;
 }
+*/
 
 interface TokenResponse {
   data: {
@@ -50,6 +52,7 @@ interface TokenResponse {
     type: string;
   };
 }
+/*
 
 interface VideoInfoResponse {
   data: {
@@ -73,16 +76,18 @@ interface VideoInfoResponse {
     type: "videoPlaybackInfo";
   };
 }
+*/
 
 class DiscoveryChannels extends BasicChannel {
-  async fetchToken() {
+  async fetchToken () {
     const result: AxiosResponse<TokenResponse> = await this.axiosCall.get(
-      "https://disco-api.discoveryplus.it/token?realm=dplayit"
-    );
-
-    return result.data.data.attributes.token;
+      'https://disco-api.discoveryplus.it/token?realm=dplayit'
+    )
+    
+    return result.data.data.attributes.token
   }
-
+  
+  
   /* async workflow(): Promise<string> {
     const token = await this.fetchToken();
     const url = this.preparedUrl();

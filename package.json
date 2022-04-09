@@ -3,16 +3,23 @@
   "version": "2.0.0",
   "private": false,
   "scripts": {
-    "build": "node ace build --production",
+    "build": "npx mix --production && node ace build --production",
     "start": "cd build && node server.js",
-    "dev": "node ace serve --watch"
+    "dev": "node ace serve --watch",
+    "dev-assets": "npx mix watch"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^3.0.0",
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "@types/lodash": "^4.14.167",
     "adonis-preset-ts": "^1.1.0",
     "pino-pretty": "^4.3.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.8",
     "typescript": "^4.1.3",
+    "vue-loader": "^16.2.0",
     "youch": "^2.1.1",
     "youch-terminal": "^1.0.1"
   },
@@ -21,23 +28,29 @@
     "@adonisjs/repl": "^1.0.0",
     "@adonisjs/session": "^4.0.0",
     "@adonisjs/view": "^3.0.0",
+    "@popperjs/core": "^2.11.5",
     "@types/jsdom": "^16.2.7",
     "@types/tough-cookie": "^4.0.0",
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
+    "bootstrap": "^5.1.3",
+    "dashjs": "^4.3.0",
     "dayjs": "^1.10.7",
+    "hls.js": "^1.1.5",
     "https": "^1.0.0",
     "https-proxy-agent": "^5.0.0",
     "jsdom": "^16.5.1",
+    "laravel-mix": "^6.0.43",
     "lodash": "^4.17.20",
     "pem": "^1.14.4",
+    "pinia": "^2.0.13",
     "proxy-addr": "^2.0.6",
     "qs": "^6.10.0",
     "reflect-metadata": "^0.1.13",
     "socks-proxy-agent": "^6.1.0",
     "source-map-support": "^0.5.19",
     "tough-cookie": "^4.0.0",
-    "vue": "^3.0.5"
+    "vue": "^3.2.31"
   },
   "engines": {
     "node": ">=12.0.0"

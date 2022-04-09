@@ -10,11 +10,11 @@ class ProtvChannels extends BasicChannel {
 
   async login() {
     axiosCookieJarSupport(this.axiosCall);
-    const dom = await this.JSDOM.fromURL("https://protvplus.ro/login", {
+    /*const dom = await this.JSDOM.fromURL("https://protvplus.ro/login", {
       pretendToBeVisual: true,
       cookieJar: this.cookieJar,
-    });
-    const document = dom.window.document;
+    });*/
+    // const document = dom.window.document;
 
     /* document.querySelector("[name='email']").value = "florian.leica@gmail.com";
     document.querySelector("[name='password']").value = "b*7i^H4Xe%i6@#E";
@@ -44,8 +44,8 @@ class ProtvChannels extends BasicChannel {
     }
   }
 
-  async workflow(): Promise<string> {
-    const channel = this.getChannel();
+  async workflow(): Promise<any> {
+    // const channel = this.getChannel();
     let result = "";
 
     await this.login();

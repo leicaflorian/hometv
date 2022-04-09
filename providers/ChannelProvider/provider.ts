@@ -42,13 +42,17 @@ class ChannelsHandler {
 
     // If there is still no instance for the requested group, instantiates it
     if (!channelInstance) {
-      const className = upperFirst(camelCase(group)) + "Channels"
-      const classToUse = (await import(`./classes/${className}`)).default
-      const groupData = this.config.groups.find(_group => _group.groupTitle.toLowerCase() === group.toLowerCase())
-  
-      set(this.channelsInstances, `${group}`, new classToUse(groupData))
-  
-      channelInstance = get(this.channelsInstances, `${group}`)
+      try {
+        const className = upperFirst(camelCase(group)) + 'Channels'
+        const classToUse = (await import(`./classes/${className}`)).default
+        const groupData = this.config.groups.find(_group => _group.groupTitle.toLowerCase() === group.toLowerCase())
+    
+        set(this.channelsInstances, `${group}`, new classToUse(groupData))
+    
+        channelInstance = get(this.channelsInstances, `${group}`)
+      } catch (error) {
+        // console.log(error)
+      }
     }
   
     return await channelInstance.handle(channel)
