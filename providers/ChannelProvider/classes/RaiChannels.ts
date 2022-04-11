@@ -42,14 +42,18 @@ class RaiChannels extends BasicChannel {
       // Find the link directly from the api of RAI
       const result: AxiosResponse<RaiJSON> = await this.axiosCall({
         url: this.preparedUrl(channel.id.toLowerCase()),
-        method: 'get',
+        method: 'get'
+    
+      })
+      const finalUrl = await this.axiosCall(result.data.video.content_url, {
         params: {
-          output: '62'
+          // output: '62'
+          output: '54'
         }
       })
-      const finalUrl = await this.axiosCall(result.data.video.content_url + '&output=62')
   
-      return finalUrl.data.video[0]
+      // return finalUrl.data.video[0]
+      return finalUrl.data
     } catch (er) {
       console.error(er);
       return er;
