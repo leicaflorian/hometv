@@ -23,6 +23,7 @@ declare interface Channel {
   tvgLogo: string
   radio: string,
   mpd?: boolean,
+  useGenericUrl?: boolean
 }
 
 declare interface ChannelGroup {

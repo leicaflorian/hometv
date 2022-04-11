@@ -35,7 +35,7 @@ export default [
     tvgLogo: "191",
     tvgName: "",
     tvgId: "",
-    mpd: true
+    mpd: true,
   },
   {
     id: "20",
@@ -62,7 +62,9 @@ export default [
     tvgLogo: "192",
     tvgName: "",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
+  
   },
   {
     id: "focus",
@@ -71,7 +73,8 @@ export default [
     tvgLogo: "249",
     tvgName: "Focus",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
   },
   {
     id: "extra",
@@ -80,7 +83,8 @@ export default [
     tvgLogo: "194",
     tvgName: "",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
   },
   {
     id: "topc",
@@ -89,7 +93,8 @@ export default [
     tvgLogo: "193",
     tvgName: "",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
   },
   {
     id: "boing",
@@ -98,7 +103,8 @@ export default [
     tvgLogo: "195",
     tvgName: "",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
   },
   {
     id: "cartoon",
@@ -107,7 +113,8 @@ export default [
     tvgLogo: "196",
     tvgName: "",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
   },
   {
     id: "tg24",
@@ -161,7 +168,9 @@ export default [
     tvgLogo: "574",
     tvgName: "Cine34",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
+  
   },{
     id: "27",
     code: "TS",
@@ -169,6 +178,8 @@ export default [
     tvgLogo: "601",
     tvgName: "27",
     tvgId: "",
-    mpd: true
+    mpd: true,
+    useGenericUrl: true
+    
   },
 ] as Channel[];

@@ -26,11 +26,16 @@ class MediasetChannels extends BasicChannel {
         referer: 'https://www.mediasetplay.mediaset.it/'
       }
     })
-    
+  
     const mpegUrl = result.data.response.publicUrl
+  
+    if (this.getChannel()?.useGenericUrl) {
+      return mpegUrl;
+    }
+  
     let finalUrl = `https://live3.msf.cdn.mediaset.net/content/dash_d0_clr_vos/live/channel(${this.channel})/manifest.mpd`
     // let finalUrl = `https://live3t.msf.cdn.mediaset.net/content/dash_d0_cls_vos/live/channel(c5)/manifest.mpd?`
-    
+  
     try {
       const xml = await axios.get(mpegUrl, {
         params: {
