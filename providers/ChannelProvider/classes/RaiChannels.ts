@@ -1,6 +1,7 @@
 import { AxiosResponse } from "axios";
 import { Channel } from "types/ChannelsList";
 import { BasicChannel } from "./BasicChannel";
+import { final } from 'pino'
 
 interface RaiJSON {
   id: string; // "ContentItem-983d0874-1718-4e58-952a-1615517c8e83",
@@ -43,17 +44,19 @@ class RaiChannels extends BasicChannel {
       const result: AxiosResponse<RaiJSON> = await this.axiosCall({
         url: this.preparedUrl(channel.id.toLowerCase()),
         method: 'get'
-    
       })
       const finalUrl = await this.axiosCall(result.data.video.content_url, {
         params: {
-          output: '62'
+          // output: '62'
           // output: '54'
+          output: '7'
         }
       })
   
       // return finalUrl.data.video[0]
       return result.data.video.content_url
+      // return finalUrl.data.replace("URI=\"", 'URI="' + "https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/")
+      // return result.data.video.content_url + "&output=12"
     } catch (er) {
       console.error(er);
       return er;
