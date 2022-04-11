@@ -109,6 +109,16 @@ class DiscoveryChannels extends BasicChannel {
   } */
 
   async workflow(): Promise<string> {
+    // First call "https://eu1-prod.disco-api.com/token?realm=dplay" and get data.attribute.token
+    
+    // then call " https://eu1-prod.disco-api.com/playback/channelPlaybackInfo/323?usePreAuth=true" and get data.attributes.streaming.dash.url
+    // da qui, leggere anche data.attributes.protection.drmToken che sarà il codice per la licenza
+    
+    // TODO:: capire funzionamento licenza. Capire come passarla al client visto che il lavoro viene fatto dal server
+    // Forse aggiungere un endpoint per la licenza in base al canale?
+    // Serve controlalre https://reference.dashif.org/dash.js/latest/samples/drm/widevine.html
+    // su come collegarsi al server usando una licenza
+    
     return this.preparedUrl()
   }
 }

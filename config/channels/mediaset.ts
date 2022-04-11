@@ -44,7 +44,7 @@ export default [
     tvgLogo: "443",
     tvgName: "",
     tvgId: 7,
-    mpd: true
+    mpd: false
   },
   {
     id: "la5",
