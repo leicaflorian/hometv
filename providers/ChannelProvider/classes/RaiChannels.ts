@@ -47,13 +47,13 @@ class RaiChannels extends BasicChannel {
       })
       const finalUrl = await this.axiosCall(result.data.video.content_url, {
         params: {
-          // output: '62'
-          output: '54'
+          output: '62'
+          // output: '54'
         }
       })
   
       // return finalUrl.data.video[0]
-      return finalUrl.data
+      return result.data.video.content_url
     } catch (er) {
       console.error(er);
       return er;
