@@ -16,14 +16,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 14.x ]
+        node-version: [14.x]
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: yarn ci
-      - run: yarn run build-assets
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: yarn ci
+    - run: yarn run build-assets
