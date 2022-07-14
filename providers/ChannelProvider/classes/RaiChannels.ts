@@ -1,6 +1,9 @@
-import { AxiosResponse } from "axios";
-import { Channel } from "types/ChannelsList";
-import { BasicChannel } from "./BasicChannel";
+import { AxiosResponse } from 'axios'
+import { Channel } from 'types/ChannelsList'
+import { BasicChannel } from './BasicChannel'
+
+const parseString = require('xml2js').parseStringPromise
+
 // import { final } from 'pino'
 
 interface RaiJSON {
@@ -36,8 +39,8 @@ interface RaiJSON {
 }
 
 class RaiChannels extends BasicChannel {
-  async workflow(): Promise<string> {
-    const channel: Channel = this.getChannel() as Channel;
+  async workflow (): Promise<string> {
+    const channel: Channel = this.getChannel() as Channel
     
     try {
       // Find the link directly from the api of RAI
@@ -45,23 +48,24 @@ class RaiChannels extends BasicChannel {
         url: this.preparedUrl(channel.id.toLowerCase()),
         method: 'get'
       })
-     /* const finalUrl = await this.axiosCall(result.data.video.content_url, {
+      
+      const resp = await this.axiosCall(result.data.video.content_url, {
         params: {
-          // output: '62'
+          output: '64'
           // output: '54'
-          output: '7'
+          // output: '7'
         }
-      })*/
-  
-      // return finalUrl.data.video[0]
-      return result.data.video.content_url
-      // return finalUrl.data.replace("URI=\"", 'URI="' + "https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/")
-      // return result.data.video.content_url + "&output=12"
+      })
+      
+      const xmlData = await parseString(resp.data)
+      
+      return xmlData.Mediapolis.url[0]._.trim()
+      // return result.data.video.content_url
     } catch (er) {
-      console.error(er);
-      return er;
+      console.error(er)
+      return er
     }
   }
 }
 
-export default RaiChannels;
+export default RaiChannels

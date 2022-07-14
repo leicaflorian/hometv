@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npx mix --production && node ace build --production",
     "start": "cd build && node server.js",
-    "dev": "node ace serve --watch",
+    "dev": "node ace serve --watch --inspect",
     "dev-assets": "npx mix watch"
   },
   "devDependencies": {
