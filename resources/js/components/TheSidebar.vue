@@ -22,6 +22,17 @@
       </ul>
     </div>
 
+    <div class="flex-column flex-nowrap py-4">
+      <ul class="nav flex-nowrap flex-column">
+        <li class="nav-item">
+          <a class="nav-link"
+             aria-current="page" href="/list"
+             target="_blank"
+          >Apri lista M3U8</a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </template>
 
