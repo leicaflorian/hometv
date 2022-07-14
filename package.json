@@ -2,6 +2,7 @@
   "name": "hometv",
   "version": "2.0.0",
   "private": false,
+  "license": "MIT",
   "scripts": {
     "build-assets": "npx mix --production",
     "build": "node ace build --production",
