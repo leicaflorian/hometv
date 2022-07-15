@@ -22,8 +22,6 @@ jobs:
         with:
           node-version: '14.19.3'
 
-      - uses: bahmutov/yarn-install@v1
-
       - name: Build app
         run: yarn install
       - name: Build assets
