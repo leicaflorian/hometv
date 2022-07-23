@@ -1,5 +1,7 @@
+import HttpExceptionHandler from '@ioc:Adonis/Core/HttpExceptionHandler';
 import { AxiosResponse } from 'axios'
 import { Channel } from 'types/ChannelsList'
+import { getRandomProxy } from '../ItalianProxies';
 import { BasicChannel } from './BasicChannel'
 
 const parseString = require('xml2js').parseStringPromise
@@ -39,27 +41,40 @@ interface RaiJSON {
 }
 
 class RaiChannels extends BasicChannel {
-  async workflow (): Promise<string> {
+  async workflow(): Promise<string> {
     const channel: Channel = this.getChannel() as Channel
-    
+
     try {
       // Find the link directly from the api of RAI
       const result: AxiosResponse<RaiJSON> = await this.axiosCall({
         url: this.preparedUrl(channel.id.toLowerCase()),
         method: 'get'
       })
-      
-      const resp = await this.axiosCall(result.data.video.content_url, {
-        params: {
-          output: '64'
-          // output: '54'
-          // output: '7'
-        }
-      })
-      
-      const xmlData = await parseString(resp.data)
-      
-      return xmlData.Mediapolis.url[0]._.trim()
+
+      console.log("Link to the channel", result.data.video.content_url);
+
+      try {
+        // facendo la chiamata lato server, essendo questo fuori dall'italia, mi da errore
+        const resp = await this.axiosCall(result.data.video.content_url, {
+          params: {
+            output: '7'
+            // output: '54'
+            // output: '7'
+          },
+          proxy: getRandomProxy()
+        })
+
+        console.log(resp.data);
+
+        const xmlData = await parseString(resp.data)
+
+        return xmlData.Mediapolis.url[0]._.trim()
+      } catch (er) {
+        console.error(er)
+      }
+
+      return result.data.video.content_url
+
       // return result.data.video.content_url
     } catch (er) {
       console.error(er)
