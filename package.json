@@ -47,7 +47,7 @@
     "pem": "^1.14.4",
     "pinia": "^2.0.13",
     "proxy-addr": "^2.0.6",
-    "qs": "^6.10.0",
+    "qs": "^6.10.3",
     "reflect-metadata": "^0.1.13",
     "socks-proxy-agent": "^6.1.0",
     "source-map-support": "^0.5.19",
