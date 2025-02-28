@@ -43,7 +43,7 @@
     "https-proxy-agent": "^5.0.0",
     "jsdom": "^16.5.1",
     "laravel-mix": "^6.0.43",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "pem": "^1.14.4",
     "pinia": "^2.0.13",
     "proxy-addr": "^2.0.6",
